@@ -239,15 +239,15 @@
         <!--=====================================-->
         <!-- Start Categories Area  -->
         <div class="edu-categorie-area categorie-area-1 edu-section-gap" style="margin-bottom: 200px;">
-            <div class="container">
+            <div class="mx-5">
                 <div class="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <span class="pre-title pre-textsecondary">VỀ THCS TRƯNG VƯƠNG - HOÀN KIẾM</span>
                     <h2 class="title">Về THCS TRƯNG VƯƠNG - HOÀN KIẾM</span></h2>
                 </div>
                 <div class="row g-5">
                     <div class="col-lg-3 col-sm-6" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
-                        <a id="historyBtn" class="" data-bs-toggle="collapse" href="#historyToggle" role="button" aria-expanded="false" aria-controls="historyToggle">
-                            <div class="categorie-grid categorie-style-1 color-primary-style edublink-svg-animate"> 
+                        <div class="categorie-grid categorie-style-1 color-primary-style edublink-svg-animate"> 
+                            <a id="historyBtn" class="" data-bs-toggle="collapse" href="#historyToggle" role="button" aria-expanded="false" aria-controls="historyToggle">
                                 <div class="icon">
                                     <img class="svgInject" src="assets/images/animated-svg-icons/online-degree.png">
                                     <!-- <i class="icon-9"></i> -->
@@ -255,8 +255,8 @@
                                 <div class="content">
                                     <h5 class="title">Lịch sử - Truyền thống</h5>                                    
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-lg-3 col-sm-6" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
@@ -274,8 +274,8 @@
                     </div>
 
                     <div class="col-lg-3 col-sm-6" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
-                        <a id="programBtn" data-bs-toggle="collapse" href="#programToggle" role="button" aria-expanded="false" aria-controls="programToggle">
-                            <div class="categorie-grid categorie-style-1 color-extra08-style edublink-svg-animate">
+                        <div class="categorie-grid categorie-style-1 color-extra08-style edublink-svg-animate">
+                            <a id="programBtn" data-bs-toggle="collapse" href="#programToggle" role="button" aria-expanded="false" aria-controls="programToggle">
                                 <div class="icon">
                                     <img class="svgInject" src="assets/images/animated-svg-icons/off-campus-programs.png">
                                     <!-- <i class="icon-11"></i> -->
@@ -283,8 +283,8 @@
                                 <div class="content">
                                     <h5 class="title">Các chương trình học</h5>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-lg-3 col-sm-6" data-sal-delay="400" data-sal="slide-up" data-sal-duration="800">
@@ -339,26 +339,22 @@
         <!--=       Video Area Start      		=-->
         <!--=====================================-->
         <div class="video-area-3" style="padding-top: 200px;padding-bottom: 100px; background-image: url('assets/images/bg/ds2.png');background-size:cover;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <div class="video-gallery">
-                            <div class="">
-                                <!-- Replace the image with a video element -->
-                                <video id="autoplayVideo" controls autoplay muted playsinline width="100%" height="auto" style="padding-top: 50px;">
-                                    <!-- Adjust the src attribute to point to the video in the assets directory -->
-                                    <source src="assets/videos/video3.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-        
-                            <ul class="shape-group">
-                                <li class="shape-3">
-                                    <img class="rotateit" src="assets/images/about/shape-31.png" alt="Shape">
-                                </li>
-                            </ul>
-                        </div>
+            <div class=""  style="width: 100%;">
+                <div class="video-gallery">
+                    <div class="video-container">
+                        <!-- Replace the image with a video element -->
+                        <video id="autoplayVideo" controls autoplay muted playsinline>
+                            <!-- Adjust the src attribute to point to the video in the assets directory -->
+                            <source src="assets/videos/video3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
+
+                    <ul class="shape-group">
+                        <li class="shape-3">
+                            <img class="rotateit" src="assets/images/about/shape-31.png" alt="Shape">
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -390,110 +386,476 @@
                 </div>
                 <div class="row g-5 row--45">
                     <div class="isotop-button isotop-filter">
-                        <button data-filter=".undergraduate" class="is-checked">
+                        <button id="btn-all" data-filter=".undergraduate" class="is-checked">
                             <span class="filter-text">Tất cả</span>
                         </button>
-                        <button data-filter=".graduate">
+                        <button id="btn-main-activity" data-filter=".graduate">
                             <span class="filter-text">Hoạt động chuyên môn</span>
                         </button>
-                        <button data-filter=".online">
+                        <button id="btn-group-activity" data-filter=".online">
                             <span class="filter-text">Hoạt động Đoàn - Đội</span>
                         </button>
-                        <button data-filter=".online">
+                        <button id="btn-library" data-filter=".online">
                             <span class="filter-text">Thư viện trường học</span>
                         </button>
-                        <button data-filter=".online">
+                        <button id="btn-goodies" data-filter=".online">
                             <span class="filter-text">Gương người tốt việc tốt</span>
                         </button>
                     </div>
                     <!-- Start Blog Grid  -->
-                    <div class="col-lg-6 col-12" data-sal-delay="50" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-blog blog-style-2 first-large-blog">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="coming-soon.html">
-                                        <img src="assets/images/blog/blog-04.jpg" alt="Blog Images">
-                                    </a>
-                                </div>
-                                <div class="content" style="background-color:transparent;">
-                                    <div class="blog-date">
-                                        <span class="day"style="color:aliceblue">06</span>
-                                        <span class="month"style="color:aliceblue">Tháng 1</span>
+                    <div class="row" id="blog-all">
+                        <div class="col-lg-6 col-12" data-sal-delay="50" data-sal="slide-up" data-sal-duration="800">
+                            <div class="edu-blog blog-style-2 first-large-blog">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-04.jpg" alt="Blog Images">
+                                        </a>
                                     </div>
-                                    <h4 class="title"><a href="coming-soon.html">Học sinh Trường THCS Trưng Vương hưởng ứng Cuộc vận động “Tự hào một dải non sông”.</p>
-                                        <p><span>Thực hiện Đề án số 06-KH/TWĐTN-BTG,...</span></p>
-                                    <ul class="blog-meta"style="color:aliceblue">
-                                        <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
-                                       
-                                    </ul>
+                                    <div class="content" style="background-color:transparent;">
+                                        <div class="blog-date">
+                                            <span class="day"style="color:aliceblue">06</span>
+                                            <span class="month"style="color:aliceblue">Tháng 1</span>
+                                        </div>
+                                        <h4 class="title"><a href="coming-soon.html">Học sinh Trường THCS Trưng Vương hưởng ứng Cuộc vận động “Tự hào một dải non sông”.</p>
+                                            <p><span>Thực hiện Đề án số 06-KH/TWĐTN-BTG,...</span></p>
+                                        <ul class="blog-meta"style="color:aliceblue">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                           
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <!-- End Blog Grid  -->
+                        <div class="col-lg-6" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-05.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day">05</span>
+                                            <span class="month">Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title"><a href="coming-soon.html">Trường THCS Trưng Vương tiếp tục tổ chức tập huấn, tháo gỡ khó khăn...</a></h5>
+                                        <ul class="blog-meta" >
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-06.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day"style="color:aliceblue">14</span>
+                                            <span class="month"style="color:aliceblue">Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title" style="display: block;"><a href="coming-soon.html">Hà Nội công bố, trao quyết định cho 2 Phó Giám đốc Sở Giáo dục và Đào tạo.</a></h5>
+                                        <ul class="blog-meta"style="color:aliceblue">
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-10.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day" >11</span>
+                                            <span class="month" >Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title"><a href="coming-soon.html">Sinh hoạt dưới cờ của trường THCS Trưng Vương chào mừng...</a></h5>
+                                        <ul class="blog-meta">
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
+                            <a href="coming-soon.html" class="edu-btn" >Xem thêm <i class="icon-4"></i></a>
                         </div>
                     </div>
-                    <!-- End Blog Grid  -->
-                    <div class="col-lg-6" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-blog blog-style-2">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="coming-soon.html">
-                                        <img src="assets/images/blog/blog-05.jpg" alt="Blog Images">
-                                    </a>
-                                    <div class="blog-date">
-                                        <span class="day">05</span>
-                                        <span class="month">Tháng 12</span>
+
+                    <div class="row d-none" id="blog-main-activity">
+                        <div class="col-lg-6 col-12" data-sal-delay="50" data-sal="slide-up" data-sal-duration="800">
+                            <div class="edu-blog blog-style-2 first-large-blog">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-04.jpg" alt="Blog Images">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="content" style="background-color:transparent;">
-                                    <h5 class="title"><a href="coming-soon.html">Trường THCS Trưng Vương tiếp tục tổ chức tập huấn, tháo gỡ khó khăn...</a></h5>
-                                    <ul class="blog-meta" >
-                                        <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
-                                    </ul>
+                                    <div class="content" style="background-color:transparent;">
+                                        <div class="blog-date">
+                                            <span class="day"style="color:aliceblue">06</span>
+                                            <span class="month"style="color:aliceblue">Tháng 1</span>
+                                        </div>
+                                        <h4 class="title"><a href="coming-soon.html">Học sinh Trường THCS Trưng Vương hưởng ứng Cuộc vận động “Tự hào một dải non sông”.</p>
+                                            <p><span>Thực</span></p>
+                                        <ul class="blog-meta"style="color:aliceblue">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                           
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="edu-blog blog-style-2">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="coming-soon.html">
-                                        <img src="assets/images/blog/blog-06.jpg" alt="Blog Images">
-                                    </a>
-                                    <div class="blog-date">
-                                        <span class="day"style="color:aliceblue">14</span>
-                                        <span class="month"style="color:aliceblue">Tháng 12</span>
+                        <!-- End Blog Grid  -->
+                        <div class="col-lg-6" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-05.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day">05</span>
+                                            <span class="month">Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title"><a href="coming-soon.html">Trường THCS Trưng Vương tiếp tục tổ chức tập huấn, tháo gỡ khó khăn...</a></h5>
+                                        <ul class="blog-meta" >
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="content" style="background-color:transparent;">
-                                    <h5 class="title" style="display: block;"><a href="coming-soon.html">Hà Nội công bố, trao quyết định cho 2 Phó Giám đốc Sở Giáo dục và Đào tạo.</a></h5>
-                                    <ul class="blog-meta"style="color:aliceblue">
-                                        <li ><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
-                                    </ul>
+                            </div>
+    
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-06.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day"style="color:aliceblue">14</span>
+                                            <span class="month"style="color:aliceblue">Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title" style="display: block;"><a href="coming-soon.html">Hà Nội công bố, trao quyết định cho 2 Phó Giám đốc Sở Giáo dục và Đào tạo.</a></h5>
+                                        <ul class="blog-meta"style="color:aliceblue">
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-10.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day" >11</span>
+                                            <span class="month" >Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title"><a href="coming-soon.html">Sinh hoạt dưới cờ của trường THCS Trưng Vương chào mừng...</a></h5>
+                                        <ul class="blog-meta">
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="edu-blog blog-style-2">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="coming-soon.html">
-                                        <img src="assets/images/blog/blog-10.jpg" alt="Blog Images">
-                                    </a>
-                                    <div class="blog-date">
-                                        <span class="day" >11</span>
-                                        <span class="month" >Tháng 12</span>
-                                    </div>
-                                </div>
-                                <div class="content" style="background-color:transparent;">
-                                    <h5 class="title"><a href="coming-soon.html">Sinh hoạt dưới cờ của trường THCS Trưng Vương chào mừng...</a></h5>
-                                    <ul class="blog-meta">
-                                        <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
+                            <a href="coming-soon.html" class="edu-btn" >Xem thêm <i class="icon-4"></i></a>
                         </div>
                     </div>
-                    <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
-                        <a href="coming-soon.html" class="edu-btn" >Xem thêm <i class="icon-4"></i></a>
+
+                    <div class="row d-none" id="blog-group-activity">
+                        <div class="col-lg-6 col-12" data-sal-delay="50" data-sal="slide-up" data-sal-duration="800">
+                            <div class="edu-blog blog-style-2 first-large-blog">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-04.jpg" alt="Blog Images">
+                                        </a>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <div class="blog-date">
+                                            <span class="day"style="color:aliceblue">06</span>
+                                            <span class="month"style="color:aliceblue">Tháng 1</span>
+                                        </div>
+                                        <h4 class="title"><a href="coming-soon.html">Học sinh Trường THCS Trưng Vương hưởng ứng Cuộc vận động “Tự hào một dải non sông”.</p>
+                                            <p><span>Thực hiện Đề án số 06-KH/TWĐTN-BTG,...</span></p>
+                                        <ul class="blog-meta"style="color:aliceblue">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Blog Grid  -->
+                        <div class="col-lg-6" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-05.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day">05</span>
+                                            <span class="month">Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title"><a href="coming-soon.html">Trường THCS Trưng Vương tiếp tục tổ chức tập huấn, tháo gỡ khó khăn...</a></h5>
+                                        <ul class="blog-meta" >
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-06.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day"style="color:aliceblue">14</span>
+                                            <span class="month"style="color:aliceblue">Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title" style="display: block;"><a href="coming-soon.html">Hà Nội công bố, trao quyết định cho 2 Phó Giám đốc Sở Giáo dục và Đào tạo.</a></h5>
+                                        <ul class="blog-meta"style="color:aliceblue">
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-10.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day" >11</span>
+                                            <span class="month" >Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title"><a href="coming-soon.html">Sinh hoạt dưới cờ của trường THCS Trưng Vương chào mừng...</a></h5>
+                                        <ul class="blog-meta">
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
+                            <a href="coming-soon.html" class="edu-btn" >Xem thêm <i class="icon-4"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="row d-none" id="blog-library">
+                        <div class="col-lg-6 col-12" data-sal-delay="50" data-sal="slide-up" data-sal-duration="800">
+                            <div class="edu-blog blog-style-2 first-large-blog">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-04.jpg" alt="Blog Images">
+                                        </a>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <div class="blog-date">
+                                            <span class="day"style="color:aliceblue">06</span>
+                                            <span class="month"style="color:aliceblue">Tháng 1</span>
+                                        </div>
+                                        <h4 class="title"><a href="coming-soon.html">Học sinh Trường THCS Trưng Vương hưởng ứng Cuộc vận động “Tự hào một dải non sông”.</p>
+                                            <p><span>Thực hiện Đề án số 06-KH/TWĐTN-BTG,...</span></p>
+                                        <ul class="blog-meta"style="color:aliceblue">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Blog Grid  -->
+                        <div class="col-lg-6" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-05.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day">05</span>
+                                            <span class="month">Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title"><a href="coming-soon.html">Trường THCS Trưng Vương tiếp tục tổ chức tập huấn, tháo gỡ khó khăn...</a></h5>
+                                        <ul class="blog-meta" >
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-06.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day"style="color:aliceblue">14</span>
+                                            <span class="month"style="color:aliceblue">Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title" style="display: block;"><a href="coming-soon.html">Hà Nội công bố, trao quyết định cho 2 Phó Giám đốc Sở Giáo dục và Đào tạo.</a></h5>
+                                        <ul class="blog-meta"style="color:aliceblue">
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-10.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day" >11</span>
+                                            <span class="month" >Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title"><a href="coming-soon.html">Sinh hoạt dưới cờ của trường THCS Trưng Vương chào mừng...</a></h5>
+                                        <ul class="blog-meta">
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
+                            <a href="coming-soon.html" class="edu-btn" >Xem thêm <i class="icon-4"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="row d-none" id="blog-goodies">
+                        <div class="col-lg-6 col-12" data-sal-delay="50" data-sal="slide-up" data-sal-duration="800">
+                            <div class="edu-blog blog-style-2 first-large-blog">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-04.jpg" alt="Blog Images">
+                                        </a>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <div class="blog-date">
+                                            <span class="day"style="color:aliceblue">06</span>
+                                            <span class="month"style="color:aliceblue">Tháng 1</span>
+                                        </div>
+                                        <h4 class="title"><a href="coming-soon.html">Học sinh Trường THCS Trưng Vương hưởng ứng Cuộc vận động “Tự hào một dải non sông”.</p>
+                                            <p><span>Thực hiện Đề án số 06-KH/TWĐTN-BTG,...</span></p>
+                                        <ul class="blog-meta"style="color:aliceblue">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Blog Grid  -->
+                        <div class="col-lg-6" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-05.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day">05</span>
+                                            <span class="month">Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title"><a href="coming-soon.html">Trường THCS Trưng Vương tiếp tục tổ chức tập huấn, tháo gỡ khó khăn...</a></h5>
+                                        <ul class="blog-meta" >
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-06.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day"style="color:aliceblue">14</span>
+                                            <span class="month"style="color:aliceblue">Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title" style="display: block;"><a href="coming-soon.html">Hà Nội công bố, trao quyết định cho 2 Phó Giám đốc Sở Giáo dục và Đào tạo.</a></h5>
+                                        <ul class="blog-meta"style="color:aliceblue">
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="edu-blog blog-style-2">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="coming-soon.html">
+                                            <img src="assets/images/blog/blog-10.jpg" alt="Blog Images">
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="day" >11</span>
+                                            <span class="month" >Tháng 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="content" style="background-color:transparent;">
+                                        <h5 class="title"><a href="coming-soon.html">Sinh hoạt dưới cờ của trường THCS Trưng Vương chào mừng...</a></h5>
+                                        <ul class="blog-meta">
+                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
+                            <a href="coming-soon.html" class="edu-btn" >Xem thêm <i class="icon-4"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -622,7 +984,7 @@
         <!--=====================================-->
         <!--=      Pricing Area Start   	=-->
         <!--=====================================-->
-        <div class="testimonial-area-13 section-gap-equal">
+        <!-- <div class="testimonial-area-13 section-gap-equal">
             <div class="container edublink-animated-shape">
                 <div class="programming-testimonial-activation swiper ">
                     <div class="swiper-wrapper">
@@ -670,6 +1032,38 @@
                     <img class="d-none-shape-dark" data-depth="2" src="assets/images/others/shape-dark-54.png" alt="Shape">
                 </li>
             </ul>
+        </div> -->
+
+        <div class="testimonial-area-13 section-gap-equal">
+            <div class="edublink-animated-shape d-flex justify-content-around">
+                <!-- <div class="row"> -->
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="title">THỰC ĐƠN BÁN TRÚ</h3>
+
+                        <div class="card rounded shadow-lg" >
+                            <img src="assets/images/about/about-32.jpg" alt="About Image" style="object-fit: cover; width:800px; height: 300px; float: left;">
+                            <div class="card-body p-5">
+                                <p class="card-text">Từ ngày 02/01/2023 đến ngày 05/01/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border"></div>
+                    
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="title">LỊCH CÔNG TÁC TUẦN</h3>
+
+                        <div class="card rounded shadow-lg" >
+                            <img src="assets/images/about/about-33.jpg" alt="About Image" style="object-fit: cover; width:800px; height: 300px; float: left;">
+                            <div class="card-body p-5">
+                                <p class="card-text">Từ ngày 02/01/2023 đến ngày 05/01/2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- </div> -->
+            
+            </div>
         </div>
         <!--=====================================-->
          <!--=       Testimonial Area Start       =-->
@@ -717,9 +1111,9 @@
         <!--=====================================-->
         <!--=       Campus      =-->
         <!--=====================================-->
-        <div class="hero-banner hero-style-9">
+        <div class="hero-banner hero-style-9 d-flex flex-column">
             <div class="slider">
-                <div class="container">
+                <div class="container" style="margin: 0px 200px 0px;">
                     <div class="swiper health-slider-content">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -863,7 +1257,7 @@
                     <div class="swiper health-slider-main">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="slide-image" data-background="assets/images/bg/bg-image-29.jpg">
+                                <div class="slide-image h-100" data-background="assets/images/bg/bg-image-29.jpg">
                                 </div>
                             </div>
                             <!-- end swiper-slide -->
@@ -945,6 +1339,7 @@
                     </ul>
                 </div>
             </div>
+
             <ul class="shape-group">
                 <li class="shape-5">
                     <img src="assets/images/counterup/shape-02.png" alt="image">
@@ -953,12 +1348,13 @@
                     <img data-depth="-2" src="assets/images/about/shape-13.png" alt="">
                 </li>
             </ul>
+            
             <div class="row justify-content-center">
-                <div class="hero-slider-bg-controls">
-                    <div class="swiper-slide-controls slide-prev">
+                <div class="hero-slider-bg-controls d-flex flex-row" style="position: relative;">
+                    <div class="swiper-slide-controls slide-prev" style="right: 0px;">
                         <i class="icon-west"></i>
                     </div>
-                    <div class="swiper-slide-controls slide-next">
+                    <div class="swiper-slide-controls slide-next" style="top: 0px;">
                         <i class="icon-east"></i>
                     </div>
                 </div>
@@ -970,7 +1366,7 @@
         <!--=====================================-->
         <!-- Start Testimonial Area  -->
         <div class="testimonial-area-17 section-gap-equal digital-marketing-testimonial edublink-animated-shape">
-            <div class="container edublink-animated-shape">
+            <div class="edublink-animated-shape">
                 <div class="testimonial-heading-area">
                     <div class="section-title section-center" data-sal-delay="50" data-sal="slide-up" data-sal-duration="800">
                         <h2 class="title">HỢP TÁC QUỐC TẾ</h2>
@@ -1036,7 +1432,7 @@
                                     <h3 class="title">Trường KISH (Trường Quốc tế Hàn Quốc Hà Nội) 
                                     </h3>
                                     <div class="edu-gallery-area edu-section-gap" style="margin-top: -100px;">
-                                        <div class="container">
+                                        <div class="">
                                             <div class="isotope-wrapper">
                                                 <div class="isotope-list gallery-grid-wrap">
                                                     <div id="animated-thumbnials">
@@ -1361,6 +1757,47 @@
             document.querySelector('#philosophyToggle').classList.remove('show');
             document.querySelector('#programToggle').classList.remove('show');
             document.querySelector('#historyToggle').classList.remove('show');
+        });
+
+        // Blog section
+        document.querySelector('#btn-all').addEventListener('click', () => {
+            document.querySelector('#blog-all').classList.remove('d-none');
+            document.querySelector('#blog-main-activity').classList.add('d-none');
+            document.querySelector('#blog-group-activity').classList.add('d-none');
+            document.querySelector('#blog-library').classList.add('d-none');
+            document.querySelector('#blog-goodies').classList.add('d-none');
+        });
+
+        document.querySelector('#btn-main-activity').addEventListener('click', () => {
+            document.querySelector('#blog-all').classList.add('d-none');
+            document.querySelector('#blog-main-activity').classList.remove('d-none');
+            document.querySelector('#blog-group-activity').classList.add('d-none');
+            document.querySelector('#blog-library').classList.add('d-none');
+            document.querySelector('#blog-goodies').classList.add('d-none');
+        });
+
+        document.querySelector('#btn-group-activity').addEventListener('click', () => {
+            document.querySelector('#blog-all').classList.add('d-none');
+            document.querySelector('#blog-main-activity').classList.add('d-none');
+            document.querySelector('#blog-group-activity').classList.remove('d-none');
+            document.querySelector('#blog-library').classList.add('d-none');
+            document.querySelector('#blog-goodies').classList.add('d-none');
+        });
+
+        document.querySelector('#btn-library').addEventListener('click', () => {
+            document.querySelector('#blog-all').classList.add('d-none');
+            document.querySelector('#blog-main-activity').classList.add('d-none');
+            document.querySelector('#blog-group-activity').classList.add('d-none');
+            document.querySelector('#blog-library').classList.remove('d-none');
+            document.querySelector('#blog-goodies').classList.add('d-none');
+        });
+
+        document.querySelector('#btn-goodies').addEventListener('click', () => {
+            document.querySelector('#blog-all').classList.add('d-none');
+            document.querySelector('#blog-main-activity').classList.add('d-none');
+            document.querySelector('#blog-group-activity').classList.add('d-none');
+            document.querySelector('#blog-library').classList.add('d-none');
+            document.querySelector('#blog-goodies').classList.remove('d-none');
         });
 
     </script>
