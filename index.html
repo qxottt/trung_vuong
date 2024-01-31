@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/vendor/tipped.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
     <!-- Site Stylesheet -->
     <link rel="stylesheet" href="assets/css/app.css">
@@ -176,7 +177,7 @@
         <!--=       Hero Banner Area Start      =-->
         <!--=====================================-->
         <div class="hero-banner hero-style-3 bg-image">
-            <div class="swiper university-activator">
+            <div class="swiper university-activator" style="height: 97vh;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img data-transform-origin='center center' data-src="assets/images/bg/bg-image-17.jpg" class="swiper-lazy" alt="image">
@@ -892,11 +893,14 @@
                                     <h5 class="title" style="color:aliceblue"><a href="coming-soon.html" >Hội khỏe Phù Đổng</a></h5>
                                     <p style="color:aliceblue">Chiều ngày 2/11/2023, tại sân trường THCS Trưng Vương đã diễn ra buổi lễ “Khai mạc Hội khỏe Phù Đổng...</p>
                                     <ul class="event-meta" style="color:aliceblue">
-                                        <li style="color:aliceblue"><i class="icon-40"></i>THCS Trưng Vương</li>
+                                        <li style="color:aliceblue"><i class="icon-40" style="color:aliceblue"></i>THCS Trưng Vương</li>
                                     </ul>
                                     <div class="read-more-btn d-flex justify-content-between">
                                         <a class="edu-btn btn-small btn-secondary" href="coming-soon.html">Tìm hiểu thêm <i class="icon-4"></i></a>
-                                        <span class="heart-icon"><i class="fa-solid fa-heart" style="font-size: 36px;"></i></span>
+                                        <div class="">
+                                            <span class="heart-icon px-2"><i class="fa-solid fa-heart" style="font-size: 30px;"></i></span>
+                                            <span class="likes" style="font-size: 30px;">222</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -923,11 +927,14 @@
                                     <h5 class="title"><a href="coming-soon.html" style="color:aliceblue">Khu Vườn Công Nghệ Sinh Học</a></h5>
                                     <p style="color:aliceblue">Trường THCS Trưng Vương có một thế giới đầy màu xanh, quyến rũ và tươi đẹp, đó là Vườn Công nghệ sinh học.</p>
                                     <ul class="event-meta">
-                                        <li style="color:aliceblue"><i class="icon-40"></i>THCS Trưng Vương</li>
+                                        <li style="color:aliceblue"><i class="icon-40" style="color:aliceblue"></i>THCS Trưng Vương</li>
                                     </ul>
                                     <div class="read-more-btn d-flex justify-content-between">
                                         <a class="edu-btn btn-small btn-secondary" href="coming-soon.html" style="color:aliceblue">Tìm hiểu thêm <i class="icon-4"></i></a>
-                                        <span class="heart-icon"><i class="fa-solid fa-heart" style="font-size: 36px;"></i></span>
+                                        <div class="">
+                                            <span class="heart-icon px-2"><i class="fa-solid fa-heart" style="font-size: 30px;"></i></span>
+                                            <span class="likes" style="font-size: 30px;">222</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -954,16 +961,21 @@
                                     <h5 class="title"><a href="coming-soon.html" style="color:aliceblue">Trại hè khoa học</a></h5>
                                     <p style="color:aliceblue">Nhận được thư mời của trường Quốc tế Hàn Quốc - Hà Nội, BGH trường THCS Trưng Vương đã...</p>
                                     <ul class="event-meta">
-                                        <li style="color:aliceblue"><i class="icon-40"></i>Trường Quốc tế Hàn Quốc - Hà Nội</li>
+                                        <li style="color:aliceblue"><i class="icon-40" style="color:aliceblue"></i>Trường Quốc tế Hàn Quốc - Hà Nội</li>
                                     </ul>
                                     <div class="read-more-btn d-flex justify-content-between">
                                         <a class="edu-btn btn-small btn-secondary" href="coming-soon.html" style="color:aliceblue">Tìm hiểu thêm <i class="icon-4"></i></a>
-                                        <span class="heart-icon"><i class="fa-solid fa-heart" style="font-size: 36px;"></i></span>
+                                        <div class="">
+                                            <span class="heart-icon px-2"><i class="fa-solid fa-heart" style="font-size: 30px;"></i></span>
+                                            <span class="likes" style="font-size: 30px;">222</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+
                     <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
                         <a href="coming-soon.html" class="edu-btn" style="color:aliceblue">Xem thêm <i class="icon-4"></i></a>
                     </div>
@@ -984,87 +996,76 @@
         <!--=====================================-->
         <!--=      Pricing Area Start   	=-->
         <!--=====================================-->
-        <!-- <div class="testimonial-area-13 section-gap-equal">
-            <div class="container edublink-animated-shape">
-                <div class="programming-testimonial-activation swiper ">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card rounded shadow-lg" >
-                                <img src="assets/images/about/about-32.jpg" alt="About Image" style="object-fit: cover; width:800px; height: 300px; float: left;">
-                                <div class="card-body p-5">
-                                    <h5 class="card-title">THỰC ĐƠN BÁN TRÚ</h5>
-                                    <p class="card-text">Từ ngày 02/01/2023 đến ngày 05/01/2023</p>
-                                </div>
-                            </div>
+        <div class="testimonial-area-13 section-gap-equal row">
+            <div class="col-6 d-flex flex-column align-items-center">
+                <h3 class="title">THỰC ĐƠN HÀNG TUẦN</h3>
+
+                <div id="carousel1" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div style="height: 70vh;" class="carousel-item p-5 active">
+                            <img src="assets/images/about/about-32.jpg" class="d-block w-100" style="object-fit: cover; height:100%" alt="...">
                         </div>
-                        <div class="swiper-slide">
-                            <div class="card rounded shadow-lg" >
-                                <img src="assets/images/about/about-33.jpg" alt="About Image" style="object-fit: cover; width:800px; height: 300px; float: left;">
-                                <div class="card-body p-5">
-                                    <h5 class="card-title">LỊCH CÔNG TÁC TUẦN</h5>
-                                    <p class="card-text">Từ ngày 02/01/2023 đến ngày 05/01/2023</p>
-                                </div>
-                            </div>
+                        <div style="height: 70vh;" class="carousel-item p-5">
+                            <img src="assets/images/about/about-33.jpg" class="d-block w-100" style="object-fit: cover; height:100%" alt="...">
                         </div>
-                        <div class="swiper-slide">
-                            <div class="card rounded shadow-lg" >
-                                <img src="assets/images/about/thucdon2.jpg" alt="About Image" style="object-fit: cover; width:800px; height: 300px; float: left;">
-                                <div class="card-body p-5">
-                                    <h5 class="card-title">THỰC ĐƠN BÁN TRÚ</h5>
-                                    <p class="card-text">Từ ngày 06/01/2023 đến ngày 12/01/2023</p>
-                                </div>
-                            </div>
+                        <div style="height: 70vh;" class="carousel-item p-5">
+                            <img src="assets/images/about/thucdon2.jpg" class="d-block w-100" style="object-fit: cover; height:100%" alt="...">
                         </div>
                     </div>
                 </div>
-                <div class="swiper-navigation" style="padding-top:40px">
-                    <div class="swiper-btn-prv">
-                        <img src="assets/images/svg-icons/icon-left.svg" alt="images left">
-                    </div>
-                    <div class="swiper-btn-nxt">
-                        <img src="assets/images/svg-icons/icon-right.svg" alt="images right">
-                    </div>
+
+                <div>
+                    <button class="btn btn-primary" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="btn btn-primary" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+
             </div>
+
+            <div class="col-6 d-flex flex-column align-items-center">
+                <h3 class="title">LỊCH CÔNG TÁC HÀNG TUẦN</h3>
+
+                <div id="carousel2" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div style="height: 70vh;" class="carousel-item p-5 active">
+                            <img src="assets/images/about/about-32.jpg" class="d-block w-100" style="object-fit: cover; height:100%" alt="...">
+                        </div>
+                        <div style="height: 70vh;" class="carousel-item p-5">
+                            <img src="assets/images/about/about-33.jpg" class="d-block w-100" style="object-fit: cover; height:100%" alt="...">
+                        </div>
+                        <div style="height: 70vh;" class="carousel-item p-5">
+                            <img src="assets/images/about/thucdon2.jpg" class="d-block w-100" style="object-fit: cover; height:100%" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="btn btn-primary" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="btn btn-primary" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+
+
             <ul class="shape-group">
                 <li class="shape-5" data-sal-delay="100" data-sal="fade" data-sal-duration="1000">
                     <img class="d-block-shape-light" data-depth="2" src="assets/images/others/shape-54.png" alt="Shape">
                     <img class="d-none-shape-dark" data-depth="2" src="assets/images/others/shape-dark-54.png" alt="Shape">
                 </li>
             </ul>
-        </div> -->
-
-        <div class="testimonial-area-13 section-gap-equal">
-            <div class="edublink-animated-shape d-flex justify-content-around">
-                <!-- <div class="row"> -->
-                    <div class="d-flex flex-column justify-content-center align-items-center">
-                        <h3 class="title">THỰC ĐƠN BÁN TRÚ</h3>
-
-                        <div class="card rounded shadow-lg" >
-                            <img src="assets/images/about/about-32.jpg" alt="About Image" style="object-fit: cover; width:800px; height: 300px; float: left;">
-                            <div class="card-body p-5">
-                                <p class="card-text">Từ ngày 02/01/2023 đến ngày 05/01/2023</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="border"></div>
-                    
-                    <div class="d-flex flex-column justify-content-center align-items-center">
-                        <h3 class="title">LỊCH CÔNG TÁC TUẦN</h3>
-
-                        <div class="card rounded shadow-lg" >
-                            <img src="assets/images/about/about-33.jpg" alt="About Image" style="object-fit: cover; width:800px; height: 300px; float: left;">
-                            <div class="card-body p-5">
-                                <p class="card-text">Từ ngày 02/01/2023 đến ngày 05/01/2023</p>
-                            </div>
-                        </div>
-                    </div>
-
-                <!-- </div> -->
-            
-            </div>
         </div>
+        
         <!--=====================================-->
          <!--=       Testimonial Area Start       =-->
         <!--=====================================-->
@@ -1373,7 +1374,7 @@
                         <span class="shape-line"><i class="icon-19"></i></span>
                     </div>
                 </div>
-                <div class="digital-marketing-activator swiper">
+                <div class="digital-marketing-activator swiper container" style="max-width: none;">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="testimonial-grid">
@@ -1381,7 +1382,7 @@
                                     <p>Tháng 4/ 2018 tới giao lưu và ký kết chương trình trao đổi giáo viên và học sinh ngắn hạn 
                                         </p>
                                     <h3 class="title">Mit Freundlichen GruBen</h3>
-                                    <div class="edu-gallery-area edu-section-gap" style="margin-top: -100px;">
+                                    <div class="edu-gallery-area edu-section-gap pt-5 mt-5" style="margin-top: -100px;">
                                         <div class="container">
                                             <div class="isotope-wrapper">
                                                 <div class="isotope-list gallery-grid-wrap">
@@ -1428,11 +1429,11 @@
                         <div class="swiper-slide">
                             <div class="testimonial-grid">
                                 <div class="content">
-                                    <p>Nhà trường trực tiếp giao lưu, trao đổi hàng năm</p>
-                                    <h3 class="title">Trường KISH (Trường Quốc tế Hàn Quốc Hà Nội) 
-                                    </h3>
-                                    <div class="edu-gallery-area edu-section-gap" style="margin-top: -100px;">
-                                        <div class="">
+                                    <p>Tháng 4/ 2018 tới giao lưu và ký kết chương trình trao đổi giáo viên và học sinh ngắn hạn 
+                                        </p>
+                                    <h3 class="title">Trường KISH</h3>
+                                    <div class="edu-gallery-area edu-section-gap pt-5 mt-5" style="margin-top: -100px;">
+                                        <div class="container">
                                             <div class="isotope-wrapper">
                                                 <div class="isotope-list gallery-grid-wrap">
                                                     <div id="animated-thumbnials">
@@ -1480,7 +1481,7 @@
                                 <div class="content">
                                     <p>Hàng năm, có nhiều hoạt động giao lưu giữa 2 trường </p>
                                     <h3 class="title">Trường Kaisi Nhật Bản</h3>
-                                    <div class="edu-gallery-area edu-section-gap" style="margin-top: -100px;">
+                                    <div class="edu-gallery-area edu-section-gap pt-5 mt-5" style="margin-top: -100px;">
                                         <div class="container">
                                             <div class="isotope-wrapper">
                                                 <div class="isotope-list gallery-grid-wrap">
@@ -1530,7 +1531,7 @@
 
                                     <p>2 nhà trường đã có buổi gặp mặt chính thức vào tháng 11 năm 2021 </p>
                                     <h3 class="title">Trường CHIJ (Trường THCS tại Singapore) </h3>
-                                    <div class="edu-gallery-area edu-section-gap" style="margin-top: -100px;">
+                                    <div class="edu-gallery-area edu-section-gap pt-5 mt-5" style="margin-top: -100px;">
                                         <div class="container">
                                             <div class="isotope-wrapper">
                                                 <div class="isotope-list gallery-grid-wrap">
@@ -1716,11 +1717,13 @@
     <script src="assets/js/vendor/tipped.min.js"></script>
     <script src="assets/js/vendor/smooth-scroll.min.js"></script>
     <script src="assets/js/vendor/isInViewport.jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <!-- Site Scripts -->
     <script src="assets/js/app.js"></script>
     <script>
         let hearts = document.querySelectorAll('.heart-icon');
+        let likes = $('.likes')
 
         // Loop through each heart
         hearts.forEach(function(heart) {
@@ -1729,11 +1732,21 @@
                 // Toggle the color between default (assume black) and red
                 if (heart.style.color === 'red') {
                     heart.style.color = ''; // Reset to default color (remove inline style)
+                    $(this).next().text('222');
                 } else {
                     heart.style.color = 'red'; // Change color to red
+                    $(this).next().text('223');
+                    Toastify({
+                        text: "Cảm ơn bạn đã tham gia hoạt động này!",    
+                        duration: 3000,
+                        style: {
+                            background: "linear-gradient(to right, #00b09b, #BCA268)",
+                        },
+                    }).showToast();
                 }
             });
         });
+
 
         document.querySelector('#historyBtn').addEventListener('click', () => {
             document.querySelector('#philosophyToggle').classList.remove('show');
