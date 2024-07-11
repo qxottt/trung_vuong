@@ -22,8 +22,14 @@
     <link rel="stylesheet" href="assets/css/vendor/jqueru-ui-min.css">
     <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/vendor/tipped.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Site Stylesheet -->
     <link rel="stylesheet" href="assets/css/app.css">
@@ -59,19 +65,16 @@
             <div id="edu-sticky-placeholder"></div>
             <div class="header-mainmenu" style="background-color: #202744;">
                 <div class="container">
-                    <div class="header-navbar">
-                        <div class="header-brand">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img class="logo-light" src="assets/images/logo/logotv2.png" alt="Corporate Logo" style="width:75%">
-                                    <img class="logo-dark" src="assets/images/logo/logotv2.png" alt="Corporate Logo">
-
-                                </a>
-                            </div>
-                        </div>
-                        <div class="header-mainnav">
-                            <nav class="mainmenu-nav">
-                                <ul class="mainmenu">
+                    <nav class="navbar navbar-expand-lg navbar-dark" >
+                        <a class="navbar-brand" href="index.html">
+                            <img class="logo-dark" src="assets/images/logo/logotv2.png" alt="Corporate Logo">
+                        </a>
+                        <button style="border:none" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <div class="mainmenu-nav">
+                                <ul class="mainmenu navbar-nav ml-auto">
                                     <li><a href="lstt.html" style="color:aliceblue">LỊCH SỬ & TRUYỀN THỐNG</a></li>
                                     <li class="has-droupdown"><a style="color:aliceblue">THÔNG BÁO</a>
                                         <ul class="submenu">
@@ -82,7 +85,6 @@
                                             
                                         </ul>
                                     </li>
-
                                     <li class="has-droupdown"><a style="color:aliceblue">TIN TỨC - HOẠT ĐỘNG</a>
                                         <ul class="submenu">
                                             <li><a href="tt1.html">Tin tức</a></li>    
@@ -101,60 +103,18 @@
                                     <li class=""><a href="https://hanoi.edu.vn/homegdhn2" style="color:aliceblue">PHÒNG GD&ĐT</a>
                                     </li>
                                 </ul>
-                            </nav>
+                            </div>
+                           
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="popup-mobile-menu">
-                <div class="inner">
-                    <div class="header-top">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img class="logo-light" src="assets/images/logo/logo-tv.jpg" alt="Corporate Logo" style="width:50%">
-                                <img class="logo-dark" src="assets/images/logo/logo-tv.jpg" alt="Corporate Logo">
-
-                            </a>
-                        </div>
-                        <div class="close-menu">
-                            <button class="close-button">
-                                <i class="icon-73"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <ul class="mainmenu">
-                        <li><a href="lstt.html" style="color:aliceblue">LỊCH SỬ & TRUYỀN THỐNG</a></li>
-                        <li class="has-droupdown"><a style="color:aliceblue">THÔNG BÁO</a>
-                            <ul class="submenu">
-                                <li><a href="tb1.html">Thông báo từ Phòng, Sở GD&ĐT</a></li>
-                                <li><a href="tb2.html">Thông báo từ nhà trường</a></li>
-                                <li><a href="tb3.html">Thi và tuyển sinh</a></li>
-                                
-                                
-                            </ul>
-                        </li>
-
-                        <li class="has-droupdown"><a style="color:aliceblue">TIN TỨC - HOẠT ĐỘNG</a>
-                            <ul class="submenu">
-                                <li><a href="tt1.html">Tin tức</a></li>    
-                                <li><a href="tt2.html">Góc chia sẻ</a></li>
-                                <li><a href="tt3.html">Câu lạc bộ</a></li>
-                                <li><a href="tt4.html">Hợp tác quốc tế</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-droupdown"><a style="color:aliceblue">TÀI NGUYÊN</a>
-                            <ul class="submenu">
-                                <li><a href="tn1.html">Thư viện ảnh</a></li>
-                                <li><a href="tn2.html">Thư viện Video</a></li>
-                                <li><a href="tn3.html">Kho học liệu</a></li>
-                            </ul>
-                        </li>
-                        <li class=""><a href="https://hanoi.edu.vn/homegdhn2" style="color:aliceblue">PHÒNG GD&ĐT</a>
-                        </li>
-                    </ul>
+                    </nav>
                 </div>
             </div>
         </header>
+        
+        
+
+
+
         <!--=====================================-->
         <!--=       Hero Banner Area Start      =-->
         <!--=====================================-->
@@ -162,34 +122,20 @@
             <div class="swiper university-activator">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img data-transform-origin='center center' data-src="assets/images/bg/tuyensinh2.jpeg" class="swiper-lazy" alt="image">
+                        <img data-transform-origin='center center' data-src="assets/images/bg/tuyensinh2.jpeg"
+                            class="swiper-lazy" alt="image">
                         <div class="thumbnail-bg-content">
                             <div class="container edublink-animated-shape">
                                 <div class="row">
                                     <div class="col-7">
                                         <div class="banner-content">
-                                            <div class="course-view-all sal-animate" data-sal-delay="500" data-sal="slide-up" data-sal-duration="1200">
-                                                <a href="tuyensinh.html" class="edu-btn" >Xem thêm <i class="icon-4"></i></a>
+                                            <div class="course-view-all sal-animate" data-sal-delay="500"
+                                                data-sal="slide-up" data-sal-duration="1200">
+                                                <a href="tuyensinh.html" class="edu-btn">Xem thêm <i
+                                                        class="icon-4"></i></a>
                                             </div>
-                                            <div class="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img data-transform-origin='center center' data-src="assets/images/bg/tuyensinh1.jpeg" class="swiper-lazy" alt="image">
-                        <div class="thumbnail-bg-content">
-                            <div class="container edublink-animated-shape">
-                                <div class="row">
-                                    <div class="col-7">
-                                        <div class="banner-content">
-                                            <div class="course-view-all sal-animate" data-sal-delay="500" data-sal="slide-up" data-sal-duration="1200">
-                                                <a href="tuyensinh.html" class="edu-btn" >Xem thêm <i class="icon-4"></i></a>
-                                            </div>
-                                            <div class="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
+                                            <div class="banner-btn" data-sal-delay="400" data-sal="slide-up"
+                                                data-sal-duration="1000">
                                             </div>
                                         </div>
                                     </div>
@@ -198,16 +144,47 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img data-transform-origin='center center' data-src="assets/images/bg/bg-image-17.jpg" class="swiper-lazy" alt="image">
+                        <img data-transform-origin='center center' data-src="assets/images/bg/tuyensinh1.jpeg"
+                            class="swiper-lazy" alt="image">
                         <div class="thumbnail-bg-content">
                             <div class="container edublink-animated-shape">
                                 <div class="row">
                                     <div class="col-7">
                                         <div class="banner-content">
-                                            <span class="subtitle" data-sal="slide-up" data-sal-duration="1000" style="color: #c6a871; white-space: nowrap;">Chào mừng đến với THCS Trưng Vương - Hoàn Kiếm</span>
-                                            <h1 class="title" data-sal-delay="100" data-sal="slide-up" data-sal-duration="1000" style="color: aliceblue;">NGÔI TRƯỜNG<br> ĐÁNG MƠ ƯỚC</h1>
-                                            <p data-sal-delay="200" data-sal="slide-up" data-sal-duration="1000"  style="color: aliceblue;">Trong xu thế hội nhập của thế kỷ 21 trường THCS Trưng Vương là một trong những trường đầu tiên của thủ đô Hà Nội hợp tác quốc tế về lĩnh vực giáo dục.</p>
-                                            <div class="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
+                                            <div class="course-view-all sal-animate" data-sal-delay="500"
+                                                data-sal="slide-up" data-sal-duration="1200">
+                                                <a href="tuyensinh.html" class="edu-btn">Xem thêm <i
+                                                        class="icon-4"></i></a>
+                                            </div>
+                                            <div class="banner-btn" data-sal-delay="400" data-sal="slide-up"
+                                                data-sal-duration="1000">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-transform-origin='center center' data-src="assets/images/bg/bg-image-17.jpg"
+                            class="swiper-lazy" alt="image">
+                        <div class="thumbnail-bg-content">
+                            <div class="container edublink-animated-shape">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="banner-content">
+                                            <span class="subtitle" data-sal="slide-up" data-sal-duration="1000"
+                                                style="color: #c6a871; white-space: nowrap;">Chào mừng đến với THCS
+                                                Trưng Vương - Hoàn Kiếm</span>
+                                            <h1 class="title" data-sal-delay="100" data-sal="slide-up"
+                                                data-sal-duration="1000" style="color: aliceblue;">NGÔI TRƯỜNG<br> ĐÁNG
+                                                MƠ ƯỚC</h1>
+                                            <p data-sal-delay="200" data-sal="slide-up" data-sal-duration="1000"
+                                                style="color: aliceblue;">Trong xu thế hội nhập của thế kỷ 21 trường
+                                                THCS Trưng Vương là một trong những trường đầu tiên của thủ đô Hà
+                                                Nội hợp tác quốc tế về lĩnh vực giáo dục.</p>
+                                            <div class="banner-btn" data-sal-delay="400" data-sal="slide-up"
+                                                data-sal-duration="1000">
                                             </div>
                                         </div>
                                     </div>
@@ -216,15 +193,22 @@
                         </div>
                     </div>
                     <div class="swiper-slide" style="background-color:#4054a4;">
-                        <img data-transform-origin='center center' data-src="assets/images/bg/bg-image-26.jpg" class="swiper-lazy" alt="image">
+                        <img data-transform-origin='center center' data-src="assets/images/bg/bg-image-26.jpg"
+                            class="swiper-lazy" alt="image">
                         <div class="thumbnail-bg-content">
                             <div class="container edublink-animated-shape">
                                 <div class="row">
                                     <div class="col-7">
                                         <div class="banner-content">
-                                            <span class="subtitle" data-sal="slide-up" data-sal-duration="1000"  style="color: #c6a871; white-space: nowrap;">Chào mừng đến với THCS Trưng Vương - Hoàn Kiếm</span>
-                                            <h1 class="title" data-sal-delay="100" data-sal="slide-up" data-sal-duration="1000"  style="color: aliceblue;">107 NĂM TUỔI ĐỜI</h1>
-                                            <p data-sal-delay="200" data-sal="slide-up" data-sal-duration="1000"  style="color: aliceblue;">Tiền thân là trường nữ sinh Đồng Khánh. Đến nay đã tròn 106 tuổi, trường THCS Trưng Vương (Hà Nội) trở thành một trong những ngôi trường lâu đời nhất tại Thủ đô.</p>
+                                            <span class="subtitle" data-sal="slide-up" data-sal-duration="1000"
+                                                style="color: #c6a871; white-space: nowrap;">Chào mừng đến với THCS
+                                                Trưng Vương - Hoàn Kiếm</span>
+                                            <h1 class="title" data-sal-delay="100" data-sal="slide-up"
+                                                data-sal-duration="1000" style="color: aliceblue;">107 NĂM TUỔI ĐỜI</h1>
+                                            <p data-sal-delay="200" data-sal="slide-up" data-sal-duration="1000"
+                                                style="color: aliceblue;">Tiền thân là trường nữ sinh Đồng Khánh. Đến
+                                                nay đã tròn 106 tuổi, trường THCS Trưng Vương (Hà Nội) trở thành một
+                                                trong những ngôi trường lâu đời nhất tại Thủ đô.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -232,15 +216,24 @@
                         </div>
                     </div>
                     <div class="swiper-slide" style="background-color:#4054a4;">
-                        <img data-transform-origin='center center' data-src="assets/images/bg/hero3.jpg" class="swiper-lazy" alt="image">
+                        <img data-transform-origin='center center' data-src="assets/images/bg/hero3.jpg"
+                            class="swiper-lazy" alt="image">
                         <div class="thumbnail-bg-content">
                             <div class="container edublink-animated-shape">
                                 <div class="row">
                                     <div class="col-7">
                                         <div class="banner-content">
-                                            <span class="subtitle" data-sal="slide-up" data-sal-duration="1000"  style="color: #c6a871; white-space: nowrap;">Chào mừng đến với THCS Trưng Vương - Hoàn Kiếm</span>
-                                            <h1 class="title" data-sal-delay="100" data-sal="slide-up" data-sal-duration="1000"  style="color: aliceblue;">MÔ HÌNH <br> CÂU LẠC BỘ</h1>
-                                            <p data-sal-delay="200" data-sal="slide-up" data-sal-duration="1000"  style="color: aliceblue;">Mô hình CLB nhà trường được phát triển nhằm nâng cao chất lượng giáo dục toàn diện, giúp học sinh hiểu biết thêm về nhiều lĩnh vực trong đời sống và giải trí, thư giãn lành mạnh sau những giờ học tập căng thẳng.</p>
+                                            <span class="subtitle" data-sal="slide-up" data-sal-duration="1000"
+                                                style="color: #c6a871; white-space: nowrap;">Chào mừng đến với THCS
+                                                Trưng Vương - Hoàn Kiếm</span>
+                                            <h1 class="title" data-sal-delay="100" data-sal="slide-up"
+                                                data-sal-duration="1000" style="color: aliceblue;">MÔ HÌNH <br> CÂU LẠC
+                                                BỘ</h1>
+                                            <p data-sal-delay="200" data-sal="slide-up" data-sal-duration="1000"
+                                                style="color: aliceblue;">Mô hình CLB nhà trường được phát triển nhằm
+                                                nâng cao chất lượng giáo dục toàn diện, giúp học sinh hiểu biết thêm về
+                                                nhiều lĩnh vực trong đời sống và giải trí, thư giãn lành mạnh sau những
+                                                giờ học tập căng thẳng.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -248,15 +241,23 @@
                         </div>
                     </div>
                     <div class="swiper-slide" style="background-color:#4054a4;">
-                        <img data-transform-origin='center center' data-src="assets/images/bg/hero4.jpg" class="swiper-lazy" alt="image">
+                        <img data-transform-origin='center center' data-src="assets/images/bg/hero4.jpg"
+                            class="swiper-lazy" alt="image">
                         <div class="thumbnail-bg-content">
                             <div class="container edublink-animated-shape">
                                 <div class="row">
                                     <div class="col-7">
                                         <div class="banner-content">
-                                            <span class="subtitle" data-sal="slide-up" data-sal-duration="1000"  style="color: #c6a871; white-space: nowrap;">Chào mừng đến với THCS Trưng Vương - Hoàn Kiếm</span>
-                                            <h1 class="title" data-sal-delay="100" data-sal="slide-up" data-sal-duration="1000"  style="color: aliceblue;">ĐIỂM SÁNG <br> THỂ DỤC - THỂ THAO</h1>
-                                            <p data-sal-delay="200" data-sal="slide-up" data-sal-duration="1000"  style="color: aliceblue;">Trong những năm qua, trường THCS Trưng Vương duy trì vị trí tiên phong về xây dựng phong trào thể dục - thể thao, đạt được nhiều thành tích cao đứng đầu quận Hoàn Kiếm.</p>
+                                            <span class="subtitle" data-sal="slide-up" data-sal-duration="1000"
+                                                style="color: #c6a871; white-space: nowrap;">Chào mừng đến với THCS
+                                                Trưng Vương - Hoàn Kiếm</span>
+                                            <h1 class="title" data-sal-delay="100" data-sal="slide-up"
+                                                data-sal-duration="1000" style="color: aliceblue;">ĐIỂM SÁNG <br> THỂ
+                                                DỤC - THỂ THAO</h1>
+                                            <p data-sal-delay="200" data-sal="slide-up" data-sal-duration="1000"
+                                                style="color: aliceblue;">Trong những năm qua, trường THCS Trưng Vương
+                                                duy trì vị trí tiên phong về xây dựng phong trào thể dục - thể thao, đạt
+                                                được nhiều thành tích cao đứng đầu quận Hoàn Kiếm.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -280,7 +281,7 @@
                 <li class="shape-2 scene" data-sal-delay="1000" data-sal="fade" data-sal-duration="1000">
                     <img data-depth="-3" src="assets/images/others/shape-11.png" alt="Shape">
                 </li>
-                
+
             </ul>
         </div>
         <!--=====================================-->
@@ -289,20 +290,22 @@
         <!-- Start Categories Area  -->
         <div class="edu-categorie-area categorie-area-1 edu-section-gap" style="margin-bottom: 200px;">
             <div class="mx-5">
-                <div class="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <div class="section-title section-center" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
                     <span class="pre-title pre-textsecondary">VỀ THCS TRƯNG VƯƠNG - HOÀN KIẾM</span>
                     <h2 class="title">Về THCS TRƯNG VƯƠNG - HOÀN KIẾM</span></h2>
                 </div>
                 <div class="row g-5">
                     <div class="col-lg-3 col-sm-6" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
-                        <div class="categorie-grid categorie-style-1 color-primary-style edublink-svg-animate"> 
-                            <a id="historyBtn" class="" data-bs-toggle="collapse" href="#historyToggle" role="button" aria-expanded="false" aria-controls="historyToggle">
+                        <div class="categorie-grid categorie-style-1 color-primary-style edublink-svg-animate">
+                            <a id="historyBtn" class="" data-bs-toggle="collapse" href="#historyToggle" role="button"
+                                aria-expanded="false" aria-controls="historyToggle">
                                 <div class="icon">
                                     <img class="svgInject" src="assets/images/animated-svg-icons/online-degree.png">
                                     <!-- <i class="icon-9"></i> -->
                                 </div>
                                 <div class="content">
-                                    <h5 class="title">Lịch sử - Truyền thống</h5>                                    
+                                    <h5 class="title">Lịch sử - Truyền thống</h5>
                                 </div>
                             </a>
                         </div>
@@ -310,9 +313,11 @@
 
                     <div class="col-lg-3 col-sm-6" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
                         <div class="categorie-grid categorie-style-1 color-secondary-style edublink-svg-animate">
-                            <a id="philosophyBtn" data-bs-toggle="collapse" href="#philosophyToggle" role="button" aria-expanded="false" aria-controls="philosophyToggle">
+                            <a id="philosophyBtn" data-bs-toggle="collapse" href="#philosophyToggle" role="button"
+                                aria-expanded="false" aria-controls="philosophyToggle">
                                 <div class="icon">
-                                    <img class="svgInject" src="assets/images/animated-svg-icons/non-degree-programs.png">
+                                    <img class="svgInject"
+                                        src="assets/images/animated-svg-icons/non-degree-programs.png">
                                     <!-- <i class="icon-10"></i> -->
                                 </div>
                                 <div class="content">
@@ -324,9 +329,11 @@
 
                     <div class="col-lg-3 col-sm-6" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
                         <div class="categorie-grid categorie-style-1 color-extra08-style edublink-svg-animate">
-                            <a id="programBtn" data-bs-toggle="collapse" href="#programToggle" role="button" aria-expanded="false" aria-controls="programToggle">
+                            <a id="programBtn" data-bs-toggle="collapse" href="#programToggle" role="button"
+                                aria-expanded="false" aria-controls="programToggle">
                                 <div class="icon">
-                                    <img class="svgInject" src="assets/images/animated-svg-icons/off-campus-programs.png">
+                                    <img class="svgInject"
+                                        src="assets/images/animated-svg-icons/off-campus-programs.png">
                                     <!-- <i class="icon-11"></i> -->
                                 </div>
                                 <div class="content">
@@ -338,9 +345,11 @@
 
                     <div class="col-lg-3 col-sm-6" data-sal-delay="400" data-sal="slide-up" data-sal-duration="800">
                         <div class="categorie-grid categorie-style-1 color-extra05-style edublink-svg-animate">
-                            <a id="structureBtn" data-bs-toggle="collapse" href="#structureToggle" role="button" aria-expanded="false" aria-controls="structureToggle">
+                            <a id="structureBtn" data-bs-toggle="collapse" href="#structureToggle" role="button"
+                                aria-expanded="false" aria-controls="structureToggle">
                                 <div class="icon">
-                                    <img class="svgInject" src="assets/images/animated-svg-icons/hybrid-distance-programs.png">
+                                    <img class="svgInject"
+                                        src="assets/images/animated-svg-icons/hybrid-distance-programs.png">
                                     <!-- <i class="icon-12"></i> -->
                                 </div>
                                 <div class="content">
@@ -352,28 +361,32 @@
                 </div>
                 <div class="row">
                     <div class="collapse mt-3" id="historyToggle">
-                        <div class="card card-body categorie-grid categorie-style-1 color-primary-style edublink-svg-animate p-0 border-0">
+                        <div
+                            class="card card-body categorie-grid categorie-style-1 color-primary-style edublink-svg-animate p-0 border-0">
                             <!-- Image Section -->
                             <img src="assets/images/about/ab1.jpg" alt="Placeholder Image" class="img-fluid">
                         </div>
                     </div>
 
                     <div class="collapse mt-3" id="philosophyToggle">
-                        <div class="card card-body categorie-grid categorie-style-1 color-secondary-style edublink-svg-animate p-0 border-0">
+                        <div
+                            class="card card-body categorie-grid categorie-style-1 color-secondary-style edublink-svg-animate p-0 border-0">
                             <!-- Image Section -->
                             <img src="assets/images/about/about-02.jpg" alt="Placeholder Image" class="img-fluid">
                         </div>
                     </div>
 
                     <div class="collapse mt-3" id="programToggle">
-                        <div class="card card-body categorie-grid categorie-style-1 color-extra08-style edublink-svg-animate p-0 border-0">
+                        <div
+                            class="card card-body categorie-grid categorie-style-1 color-extra08-style edublink-svg-animate p-0 border-0">
                             <!-- Image Section -->
-                            <img src="assets/images/about/about-03.jpg" alt="Placeholder Image" class="img-fluid">        
+                            <img src="assets/images/about/about-03.jpg" alt="Placeholder Image" class="img-fluid">
                         </div>
                     </div>
 
                     <div class="collapse mt-3" id="structureToggle">
-                        <div class="card card-body categorie-grid categorie-style-1 color-extra05-style edublink-svg-animate p-0 border-0">
+                        <div
+                            class="card card-body categorie-grid categorie-style-1 color-extra05-style edublink-svg-animate p-0 border-0">
                             <!-- Image Section -->
                             <img src="assets/images/about/about-04.jpg" alt="Placeholder Image" class="img-fluid">
                         </div>
@@ -384,11 +397,11 @@
         </div>
         <!-- End Categories Area  -->
         <!--=====================================-->
-        
+
         <!--=       Video Area Start      		=-->
         <!--=====================================-->
         <div class="video-area-3" style="background-color: aliceblue; margin-bottom: -7px;">
-            <div class=""  style="width: 100%;">
+            <div class="" style="width: 100%;">
                 <div class="video-gallery">
                     <div class="video-container">
                         <!-- Replace the image with a video element -->
@@ -407,12 +420,12 @@
                 </div>
             </div>
         </div>
-        
+
         <script>
             // Add this script to automatically play the video after it has fully loaded
             window.onload = function () {
                 var video = document.getElementById("autoplayVideo");
-        
+
                 // Check if the video is not playing (paused)
                 if (video.paused) {
                     // Play the video
@@ -420,16 +433,18 @@
                 }
             };
         </script>
-        
+
         <!--=====================================-->
         <!--=       Features Area Start      	=-->
         <!--=====================================-->
         <!--=       	Blog Area Start      	=-->
         <!--=====================================-->
         <!-- Start Blog Area  -->
-        <div class="edu-blog-area blog-area-3 edu-section-gap" style=" background-image: url('assets/images/bg/ds2.jpg');background-size:cover;">
+        <div class="edu-blog-area blog-area-3 edu-section-gap"
+            style=" background-image: url('assets/images/bg/ds2.jpg');background-size:cover;">
             <div class="container">
-                <div class="section-title section-center" data-sal-delay="50" data-sal="slide-up" data-sal-duration="800">
+                <div class="section-title section-center" data-sal-delay="50" data-sal="slide-up"
+                    data-sal-duration="800">
                     <h2 class="title">TIN TỨC</h2>
                     <span class="shape-line"><i class="icon-19"></i></span>
                 </div>
@@ -463,15 +478,20 @@
                                     </div>
                                     <div class="content" style="background-color:transparent;">
                                         <div class="blog-date">
-                                            <span class="day"style="color:aliceblue">11</span>
-                                            <span class="month"style="color:aliceblue">Tháng 06</span>
+                                            <span class="day" style="color:aliceblue">11</span>
+                                            <span class="month" style="color:aliceblue">Tháng 06</span>
                                         </div>
-                                        <h4 class="title"><a href="z01.html">Trường THCS Trưng Vương - Hoàn Kiếm - Hà Nội đạt thành tích xuất sắc tại cuộc thi Câu lạc bộ Văn - Toán tuổi thơ toàn quốc 2024</p>
-                                            <p><span>Trường THCS Trưng Vương có 8 học sinh dự thi Câu lạc bộ Văn - Toán tuổi thơ toàn quốc. 8/8 học sinh tham dự đều đạt giải, bao gồm 5 HCV, 2 HCB và 1 HCĐ.</span></p>
-                                        <ul class="blog-meta"style="color:aliceblue">
-                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
-                                           
-                                        </ul>
+                                        <h4 class="title"><a href="z01.html">Trường THCS Trưng Vương - Hoàn Kiếm - Hà
+                                                Nội đạt thành tích xuất sắc tại cuộc thi Câu lạc bộ Văn - Toán tuổi thơ
+                                                toàn quốc 2024</p>
+                                                <p><span>Trường THCS Trưng Vương có 8 học sinh dự thi Câu lạc bộ Văn -
+                                                        Toán tuổi thơ toàn quốc. 8/8 học sinh tham dự đều đạt giải, bao
+                                                        gồm 5 HCV, 2 HCB và 1 HCĐ.</span></p>
+                                                <ul class="blog-meta" style="color:aliceblue">
+                                                    <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng
+                                                            Vương</a></li>
+
+                                                </ul>
                                     </div>
                                 </div>
                             </div>
@@ -490,14 +510,17 @@
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title"><a href="z06.html">Lễ bế giảng,Tuyên dương tập thể, cá nhân có thành tích xuất sắc năm học 2023 - 2024 của trường THCS Trưng Vương</a></h5>
-                                        <ul class="blog-meta" >
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        <h5 class="title"><a href="z06.html">Lễ bế giảng,Tuyên dương tập thể, cá nhân có
+                                                thành tích xuất sắc năm học 2023 - 2024 của trường THCS Trưng Vương</a>
+                                        </h5>
+                                        <ul class="blog-meta">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="edu-blog blog-style-2">
                                 <div class="inner">
                                     <div class="thumbnail">
@@ -505,19 +528,22 @@
                                             <img src="assets/images/blog/all3.jpg" alt="Blog Images">
                                         </a>
                                         <div class="blog-date">
-                                            <span class="day"style="color:aliceblue">24</span>
-                                            <span class="month"style="color:aliceblue">Tháng 05</span>
+                                            <span class="day" style="color:aliceblue">24</span>
+                                            <span class="month" style="color:aliceblue">Tháng 05</span>
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title" style="display: block;"><a href="z07.html">TRẬN CHUNG KẾT KHỐI 6,7 GIẢI CUP BÓNG RỔ TRƯỜNG THCS TRƯNG VƯƠNG LẦN THỨ VIII NĂM HỌC 2023 - 2024</a></h5>
-                                        <ul class="blog-meta"style="color:aliceblue">
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                        <h5 class="title" style="display: block;"><a href="z07.html">TRẬN CHUNG KẾT KHỐI
+                                                6,7 GIẢI CUP BÓNG RỔ TRƯỜNG THCS TRƯNG VƯƠNG LẦN THỨ VIII NĂM HỌC 2023 -
+                                                2024</a></h5>
+                                        <ul class="blog-meta" style="color:aliceblue">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="edu-blog blog-style-2">
                                 <div class="inner">
                                     <div class="thumbnail">
@@ -525,21 +551,25 @@
                                             <img src="assets/images/blog/all4.jpg" alt="Blog Images">
                                         </a>
                                         <div class="blog-date">
-                                            <span class="day" >09</span>
-                                            <span class="month" >Tháng 05</span>
+                                            <span class="day">09</span>
+                                            <span class="month">Tháng 05</span>
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title"><a href="z14.html">Học sinh trường THCS Trưng Vương với phong trào ủng hộ sách, truyện dành tặng học sinh tỉnh Quảng Nam, Quảng Ngãi</a></h5>
+                                        <h5 class="title"><a href="z14.html">Học sinh trường THCS Trưng Vương với phong
+                                                trào ủng hộ sách, truyện dành tặng học sinh tỉnh Quảng Nam, Quảng
+                                                Ngãi</a></h5>
                                         <ul class="blog-meta">
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
-                            <a href="tt1.html" class="edu-btn" >Xem thêm <i class="icon-4"></i></a>
+                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up"
+                            data-sal-duration="1200">
+                            <a href="tt1.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                         </div>
                     </div>
 
@@ -554,15 +584,21 @@
                                     </div>
                                     <div class="content" style="background-color:transparent;">
                                         <div class="blog-date">
-                                            <span class="day"style="color:aliceblue">11</span>
-                                            <span class="month"style="color:aliceblue">Tháng 06</span>
+                                            <span class="day" style="color:aliceblue">11</span>
+                                            <span class="month" style="color:aliceblue">Tháng 06</span>
                                         </div>
-                                        <h4 class="title"><a href="z01.html">Trường THCS Trưng Vương - Hoàn Kiếm - Hà Nội đạt thành tích xuất sắc tại cuộc thi Câu lạc bộ Văn - Toán tuổi thơ toàn quốc năm 2024.</p>
-                                            <p><span>Trường THCS Trưng Vương có 8 học sinh dự thi Câu lạc bộ Văn - Toán tuổi thơ toàn quốc. 8/8 học sinh tham dự đều đạt giải, bao gồm 5 Huy chương Vàng, 2 Huy chương Bạc và 1 Huy chương Đồng.</span></p>
-                                        <ul class="blog-meta"style="color:aliceblue">
-                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
-                                           
-                                        </ul>
+                                        <h4 class="title"><a href="z01.html">Trường THCS Trưng Vương - Hoàn Kiếm - Hà
+                                                Nội đạt thành tích xuất sắc tại cuộc thi Câu lạc bộ Văn - Toán tuổi thơ
+                                                toàn quốc năm 2024.</p>
+                                                <p><span>Trường THCS Trưng Vương có 8 học sinh dự thi Câu lạc bộ Văn -
+                                                        Toán tuổi thơ toàn quốc. 8/8 học sinh tham dự đều đạt giải, bao
+                                                        gồm 5 Huy chương Vàng, 2 Huy chương Bạc và 1 Huy chương
+                                                        Đồng.</span></p>
+                                                <ul class="blog-meta" style="color:aliceblue">
+                                                    <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng
+                                                            Vương</a></li>
+
+                                                </ul>
                                     </div>
                                 </div>
                             </div>
@@ -581,14 +617,17 @@
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title"><a href="z06.html">Lễ bế giảng,Tuyên dương tập thể, cá nhân có thành tích xuất sắc năm học 2023 - 2024 của trường THCS Trưng Vương</a></h5>
-                                        <ul class="blog-meta" >
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        <h5 class="title"><a href="z06.html">Lễ bế giảng,Tuyên dương tập thể, cá nhân có
+                                                thành tích xuất sắc năm học 2023 - 2024 của trường THCS Trưng Vương</a>
+                                        </h5>
+                                        <ul class="blog-meta">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="edu-blog blog-style-2">
                                 <div class="inner">
                                     <div class="thumbnail">
@@ -596,19 +635,22 @@
                                             <img src="assets/images/blog/hdcm3.jpg" alt="Blog Images">
                                         </a>
                                         <div class="blog-date">
-                                            <span class="day"style="color:aliceblue">13</span>
-                                            <span class="month"style="color:aliceblue">Tháng 04</span>
+                                            <span class="day" style="color:aliceblue">13</span>
+                                            <span class="month" style="color:aliceblue">Tháng 04</span>
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title" style="display: block;"><a href="z28.html">THẦY TRÒ TRƯỜNG THCS TRƯNG VƯƠNG HÀO HỨNG THAM GIA NGÀY HỘI SÁCH NGÀNH GIÁO DỤC VÀ ĐÀO TẠO QUẬN HOÀN KIẾM</a></h5>
-                                        <ul class="blog-meta"style="color:aliceblue">
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                        <h5 class="title" style="display: block;"><a href="z28.html">THẦY TRÒ TRƯỜNG
+                                                THCS TRƯNG VƯƠNG HÀO HỨNG THAM GIA NGÀY HỘI SÁCH NGÀNH GIÁO DỤC VÀ ĐÀO
+                                                TẠO QUẬN HOÀN KIẾM</a></h5>
+                                        <ul class="blog-meta" style="color:aliceblue">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="edu-blog blog-style-2">
                                 <div class="inner">
                                     <div class="thumbnail">
@@ -616,21 +658,24 @@
                                             <img src="assets/images/blog/hdcm4.jpg" alt="Blog Images">
                                         </a>
                                         <div class="blog-date">
-                                            <span class="day" >19</span>
-                                            <span class="month" >Tháng 03</span>
+                                            <span class="day">19</span>
+                                            <span class="month">Tháng 03</span>
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title"><a href="z35.html">Trường THCS Trưng Vương sôi nổi tham gia Hội thi Giáo viên dạy giỏi cấp Quận năm học 2023 – 2024</a></h5>
+                                        <h5 class="title"><a href="z35.html">Trường THCS Trưng Vương sôi nổi tham gia
+                                                Hội thi Giáo viên dạy giỏi cấp Quận năm học 2023 – 2024</a></h5>
                                         <ul class="blog-meta">
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
-                            <a href="coming-soon.html" class="edu-btn" >Xem thêm <i class="icon-4"></i></a>
+                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up"
+                            data-sal-duration="1200">
+                            <a href="coming-soon.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                         </div>
                     </div>
 
@@ -645,15 +690,21 @@
                                     </div>
                                     <div class="content" style="background-color:transparent;">
                                         <div class="blog-date">
-                                            <span class="day"style="color:aliceblue">06</span>
-                                            <span class="month"style="color:aliceblue">Tháng 5</span>
+                                            <span class="day" style="color:aliceblue">06</span>
+                                            <span class="month" style="color:aliceblue">Tháng 5</span>
                                         </div>
-                                        <h4 class="title"><a href="z16.html">Các hoạt động của trường THCS Trưng Vương hướng tới Lễ kỉ niệm 70 năm chiến thắng Điện Biên Phủ (7/5/1954-7/5/2024).</p>
-                                            <p><span>Trong không khí hân hoan cả nước hướng về lễ kỉ niệm 70 năm chiến thắng Điện Biên Phủ (7/5/1954-7/5/2024) – một chiến thắng của thời đại – chiến thắng “lừng lẫy năm châu, chấn động địa cầu...</span></p>
-                                        <ul class="blog-meta"style="color:aliceblue">
-                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
-                                           
-                                        </ul>
+                                        <h4 class="title"><a href="z16.html">Các hoạt động của trường THCS Trưng Vương
+                                                hướng tới Lễ kỉ niệm 70 năm chiến thắng Điện Biên Phủ
+                                                (7/5/1954-7/5/2024).</p>
+                                                <p><span>Trong không khí hân hoan cả nước hướng về lễ kỉ niệm 70 năm
+                                                        chiến thắng Điện Biên Phủ (7/5/1954-7/5/2024) – một chiến thắng
+                                                        của thời đại – chiến thắng “lừng lẫy năm châu, chấn động địa
+                                                        cầu...</span></p>
+                                                <ul class="blog-meta" style="color:aliceblue">
+                                                    <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng
+                                                            Vương</a></li>
+
+                                                </ul>
                                     </div>
                                 </div>
                             </div>
@@ -672,9 +723,11 @@
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title"><a href="z29.html">Lễ kết nạp Đoàn viên mới - Đợt 1 - năm học 2023 - 2024 của Chi đoàn trường THCS Trưng Vương</a></h5>
-                                        <ul class="blog-meta" >
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        <h5 class="title"><a href="z29.html">Lễ kết nạp Đoàn viên mới - Đợt 1 - năm học
+                                                2023 - 2024 của Chi đoàn trường THCS Trưng Vương</a></h5>
+                                        <ul class="blog-meta">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -687,19 +740,22 @@
                                             <img src="assets/images/bg/hddd1.jpeg" alt="Blog Images">
                                         </a>
                                         <div class="blog-date">
-                                            <span class="day"style="color:aliceblue">26</span>
-                                            <span class="month"style="color:aliceblue">Tháng 3</span>
+                                            <span class="day" style="color:aliceblue">26</span>
+                                            <span class="month" style="color:aliceblue">Tháng 3</span>
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title" style="display: block;"><a href="z31.html">Trường THCS Trưng Vương – Hoàn Kiếm tổ chức thành công mô hình điểm cấp Thành phố Ngày hội “Tiến bước lên đoàn”</a></h5>
-                                        <ul class="blog-meta"style="color:aliceblue">
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                        <h5 class="title" style="display: block;"><a href="z31.html">Trường THCS Trưng
+                                                Vương – Hoàn Kiếm tổ chức thành công mô hình điểm cấp Thành phố Ngày hội
+                                                “Tiến bước lên đoàn”</a></h5>
+                                        <ul class="blog-meta" style="color:aliceblue">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="edu-blog blog-style-2">
                                 <div class="inner">
                                     <div class="thumbnail">
@@ -707,21 +763,24 @@
                                             <img src="assets/images/blog/hddd4.jpg" alt="Blog Images">
                                         </a>
                                         <div class="blog-date">
-                                            <span class="day" >22</span>
-                                            <span class="month" >Tháng 3</span>
+                                            <span class="day">22</span>
+                                            <span class="month">Tháng 3</span>
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title"><a href="z33.html">Lễ trưởng thành Đội của học sinh khối 9 trường THCS Trưng Vương năm học 2023 – 2024</a></h5>
+                                        <h5 class="title"><a href="z33.html">Lễ trưởng thành Đội của học sinh khối 9
+                                                trường THCS Trưng Vương năm học 2023 – 2024</a></h5>
                                         <ul class="blog-meta">
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
-                            <a href="coming-soon.html" class="edu-btn" >Xem thêm <i class="icon-4"></i></a>
+                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up"
+                            data-sal-duration="1200">
+                            <a href="coming-soon.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                         </div>
                     </div>
 
@@ -736,14 +795,19 @@
                                     </div>
                                     <div class="content" style="background-color:transparent;">
                                         <div class="blog-date">
-                                            <span class="day"style="color:aliceblue">20</span>
-                                            <span class="month"style="color:aliceblue">Tháng 5</span>
+                                            <span class="day" style="color:aliceblue">20</span>
+                                            <span class="month" style="color:aliceblue">Tháng 5</span>
                                         </div>
-                                        <h4 class="title"><a href="z09.html">Lễ phát động cuộc thi Tìm hiểu môi trường "Giấc mơ xanh" do Báo Tiền Phong tổ chức tại Trường THCS Trưng Vương</p>
-                                            <p><span>Sáng 20/5/2024, trước sự chứng kiến của các đại biểu, khách mời, cùng các thầy cô giáo, các em học sinh, Báo Tiền Phong tổ chức Lễ phát động cuộc thi tìm hiểu về môi trường "Giấc mơ xanh" tại trường THCS Trưng Vương - Hoàn Kiếm  - Hà Nội.</span></p>
-                                        <ul class="blog-meta"style="color:aliceblue">
-                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
-                                        </ul>
+                                        <h4 class="title"><a href="z09.html">Lễ phát động cuộc thi Tìm hiểu môi trường
+                                                "Giấc mơ xanh" do Báo Tiền Phong tổ chức tại Trường THCS Trưng Vương</p>
+                                                <p><span>Sáng 20/5/2024, trước sự chứng kiến của các đại biểu, khách
+                                                        mời, cùng các thầy cô giáo, các em học sinh, Báo Tiền Phong tổ
+                                                        chức Lễ phát động cuộc thi tìm hiểu về môi trường "Giấc mơ xanh"
+                                                        tại trường THCS Trưng Vương - Hoàn Kiếm - Hà Nội.</span></p>
+                                                <ul class="blog-meta" style="color:aliceblue">
+                                                    <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng
+                                                            Vương</a></li>
+                                                </ul>
                                     </div>
                                 </div>
                             </div>
@@ -762,14 +826,17 @@
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title"><a href="coming-soon.html">Trường THCS Trưng Vương tổ chức tuyên truyền phòng, chống tác hại của thuốc lá điện tử trong học đường cho học sinh</a></h5>
-                                        <ul class="blog-meta" >
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        <h5 class="title"><a href="coming-soon.html">Trường THCS Trưng Vương tổ chức
+                                                tuyên truyền phòng, chống tác hại của thuốc lá điện tử trong học đường
+                                                cho học sinh</a></h5>
+                                        <ul class="blog-meta">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="edu-blog blog-style-2">
                                 <div class="inner">
                                     <div class="thumbnail">
@@ -777,19 +844,22 @@
                                             <img src="assets/images/bg/hdnk1.jpeg" alt="Blog Images">
                                         </a>
                                         <div class="blog-date">
-                                            <span class="day"style="color:aliceblue">06</span>
-                                            <span class="month"style="color:aliceblue">Tháng 4</span>
+                                            <span class="day" style="color:aliceblue">06</span>
+                                            <span class="month" style="color:aliceblue">Tháng 4</span>
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title" style="display: block;"><a href="coming-soon.html">Chương trình học tập ngoại khóa đầy bổ ích tại các khu trải nghiệm của học sinh trường THCS Trưng Vương</a></h5>
-                                        <ul class="blog-meta"style="color:aliceblue">
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                        <h5 class="title" style="display: block;"><a href="coming-soon.html">Chương
+                                                trình học tập ngoại khóa đầy bổ ích tại các khu trải nghiệm của học sinh
+                                                trường THCS Trưng Vương</a></h5>
+                                        <ul class="blog-meta" style="color:aliceblue">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="edu-blog blog-style-2">
                                 <div class="inner">
                                     <div class="thumbnail">
@@ -797,21 +867,25 @@
                                             <img src="assets/images/bg/hdnk2.jpeg" alt="Blog Images">
                                         </a>
                                         <div class="blog-date">
-                                            <span class="day" >24</span>
-                                            <span class="month" >Tháng 5</span>
+                                            <span class="day">24</span>
+                                            <span class="month">Tháng 5</span>
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title"><a href="coming-soon.html">Trải nghiệm ngôn ngữ và văn hóa của học sinh THCS Trưng Vương tại trường Quốc tế Hàn Quốc Hà Nội (KISH) năm học 2023-2024</a></h5>
+                                        <h5 class="title"><a href="coming-soon.html">Trải nghiệm ngôn ngữ và văn hóa của
+                                                học sinh THCS Trưng Vương tại trường Quốc tế Hàn Quốc Hà Nội (KISH) năm
+                                                học 2023-2024</a></h5>
                                         <ul class="blog-meta">
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
-                            <a href="coming-soon.html" class="edu-btn" >Xem thêm <i class="icon-4"></i></a>
+                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up"
+                            data-sal-duration="1200">
+                            <a href="coming-soon.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                         </div>
                     </div>
 
@@ -826,15 +900,17 @@
                                     </div>
                                     <div class="content" style="background-color:transparent;">
                                         <div class="blog-date">
-                                            <span class="day"style="color:aliceblue">06</span>
-                                            <span class="month"style="color:aliceblue">Tháng 1</span>
+                                            <span class="day" style="color:aliceblue">06</span>
+                                            <span class="month" style="color:aliceblue">Tháng 1</span>
                                         </div>
-                                        <h4 class="title"><a href="coming-soon.html">Học sinh Trường THCS Trưng Vương hưởng ứng Cuộc vận động “Tự hào một dải non sông”.</p>
-                                            <p><span>Thực hiện Đề án số 06-KH/TWĐTN-BTG,...</span></p>
-                                        <ul class="blog-meta"style="color:aliceblue">
-                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
-                                           
-                                        </ul>
+                                        <h4 class="title"><a href="coming-soon.html">Học sinh Trường THCS Trưng Vương
+                                                hưởng ứng Cuộc vận động “Tự hào một dải non sông”.</p>
+                                                <p><span>Thực hiện Đề án số 06-KH/TWĐTN-BTG,...</span></p>
+                                                <ul class="blog-meta" style="color:aliceblue">
+                                                    <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng
+                                                            Vương</a></li>
+
+                                                </ul>
                                     </div>
                                 </div>
                             </div>
@@ -853,14 +929,16 @@
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title"><a href="coming-soon.html">Trường THCS Trưng Vương tiếp tục tổ chức tập huấn, tháo gỡ khó khăn...</a></h5>
-                                        <ul class="blog-meta" >
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                        <h5 class="title"><a href="coming-soon.html">Trường THCS Trưng Vương tiếp tục tổ
+                                                chức tập huấn, tháo gỡ khó khăn...</a></h5>
+                                        <ul class="blog-meta">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="edu-blog blog-style-2">
                                 <div class="inner">
                                     <div class="thumbnail">
@@ -868,19 +946,21 @@
                                             <img src="assets/images/blog/blog-06.jpg" alt="Blog Images">
                                         </a>
                                         <div class="blog-date">
-                                            <span class="day"style="color:aliceblue">14</span>
-                                            <span class="month"style="color:aliceblue">Tháng 12</span>
+                                            <span class="day" style="color:aliceblue">14</span>
+                                            <span class="month" style="color:aliceblue">Tháng 12</span>
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title" style="display: block;"><a href="coming-soon.html">Hà Nội công bố, trao quyết định cho 2 Phó Giám đốc Sở Giáo dục và Đào tạo.</a></h5>
-                                        <ul class="blog-meta"style="color:aliceblue">
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a></li>
+                                        <h5 class="title" style="display: block;"><a href="coming-soon.html">Hà Nội công
+                                                bố, trao quyết định cho 2 Phó Giám đốc Sở Giáo dục và Đào tạo.</a></h5>
+                                        <ul class="blog-meta" style="color:aliceblue">
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="edu-blog blog-style-2">
                                 <div class="inner">
                                     <div class="thumbnail">
@@ -888,21 +968,24 @@
                                             <img src="assets/images/blog/blog-10.jpg" alt="Blog Images">
                                         </a>
                                         <div class="blog-date">
-                                            <span class="day" >11</span>
-                                            <span class="month" >Tháng 12</span>
+                                            <span class="day">11</span>
+                                            <span class="month">Tháng 12</span>
                                         </div>
                                     </div>
                                     <div class="content" style="background-color:transparent;">
-                                        <h5 class="title"><a href="coming-soon.html">Sinh hoạt dưới cờ của trường THCS Trưng Vương chào mừng...</a></h5>
+                                        <h5 class="title"><a href="coming-soon.html">Sinh hoạt dưới cờ của trường THCS
+                                                Trưng Vương chào mừng...</a></h5>
                                         <ul class="blog-meta">
-                                            <li ><i class="icon-25"></i>Tác giả: <a href="#" > Trường THCS Trưng Vương</a></li>
+                                            <li><i class="icon-25"></i>Tác giả: <a href="#"> Trường THCS Trưng Vương</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
-                            <a href="coming-soon.html" class="edu-btn" >Xem thêm <i class="icon-4"></i></a>
+                        <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up"
+                            data-sal-duration="1200">
+                            <a href="coming-soon.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                         </div>
                     </div>
                 </div>
@@ -913,19 +996,22 @@
         <!--=       Event Area Start      		=-->
         <!--=====================================-->
         <!-- Start Event Area  -->
-        <div class="edu-event-area event-area-2" style="background-image: url('assets/images/bg/ds3.png');background-size:cover; padding-top:55px">
+        <div class="edu-event-area event-area-2"
+            style="background-image: url('assets/images/bg/ds3.png');background-size:cover; padding-top:55px">
             <div class="container edublink-animated-shape">
-                <div class="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <div class="section-title section-center" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
                     <h2 class="title">SỰ KIỆN</h2>
                     <span class="shape-line"><i class="icon-19"></i></span>
                 </div>
-                <div class="row g-5" >
+                <div class="row g-5">
                     <!-- Start Event Grid  -->
                     <div class="col-lg-4 col-md-6" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-event event-style-1" >
+                        <div class="edu-event event-style-1">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="https://www.facebook.com/photo.php?fbid=122162006606188711&set=a.122101947170188711&type=3&ref=embed_post" target="_blank">
+                                    <a href="https://www.facebook.com/photo.php?fbid=122162006606188711&set=a.122101947170188711&type=3&ref=embed_post"
+                                        target="_blank">
                                         <img src="assets/images/event/event-01.jpg" alt="Blog Images">
                                     </a>
                                     <div class="event-time" style="background-color: #bca268;">
@@ -938,16 +1024,23 @@
                                         <span class="month" style="color:aliceblue">Tháng 03</span>
                                     </div>
                                     <h5 class="title" style="color:aliceblue">
-                                        <a href="https://www.facebook.com/photo.php?fbid=122162006606188711&set=a.122101947170188711&type=3&ref=embed_post" target="_blank">Ngày hội Công nghệ thông tin và STEM</a>
+                                        <a href="https://www.facebook.com/photo.php?fbid=122162006606188711&set=a.122101947170188711&type=3&ref=embed_post"
+                                            target="_blank">Ngày hội Công nghệ thông tin và STEM</a>
                                     </h5>
-                                    <p style="color:aliceblue">Phòng GDĐT quận Hoàn Kiếm tổ chức Ngày hội Công nghệ thông tin và STEM ngành Giáo dục và Đào tạo quận Hoàn Kiếm năm 2024 tại trường THCS Trưng Vương.</p>
+                                    <p style="color:aliceblue">Phòng GDĐT quận Hoàn Kiếm tổ chức Ngày hội Công nghệ
+                                        thông tin và STEM ngành Giáo dục và Đào tạo quận Hoàn Kiếm năm 2024 tại trường
+                                        THCS Trưng Vương.</p>
                                     <ul class="event-meta" style="color:aliceblue">
-                                        <li style="color:aliceblue"><i class="icon-40" style="color:aliceblue"></i>Trường THCS Trưng Vương</li>
+                                        <li style="color:aliceblue"><i class="icon-40"
+                                                style="color:aliceblue"></i>Trường THCS Trưng Vương</li>
                                     </ul>
                                     <div class="read-more-btn d-flex justify-content-between">
-                                        <a class="edu-btn btn-small btn-secondary" href="https://www.facebook.com/photo.php?fbid=122162006606188711&set=a.122101947170188711&type=3&ref=embed_post" target="_blank">Tìm hiểu thêm <i class="icon-4"></i></a>
+                                        <a class="edu-btn btn-small btn-secondary"
+                                            href="https://www.facebook.com/photo.php?fbid=122162006606188711&set=a.122101947170188711&type=3&ref=embed_post"
+                                            target="_blank">Tìm hiểu thêm <i class="icon-4"></i></a>
                                         <div class="">
-                                            <span class="heart-icon px-2"><i class="fa-solid fa-heart" style="font-size: 30px;"></i></span>
+                                            <span class="heart-icon px-2"><i class="fa-solid fa-heart"
+                                                    style="font-size: 30px;"></i></span>
                                             <span class="likes" style="font-size: 30px;">222</span>
                                         </div>
                                     </div>
@@ -973,15 +1066,21 @@
                                         <span class="day" style="color:aliceblue">20</span>
                                         <span class="month" style="color:aliceblue">Tháng 01</span>
                                     </div>
-                                    <h5 class="title"><a href="coming-soon.html" style="color:aliceblue">Ngày hội "Xuân yêu thương - Tết hội nhập"</a></h5>
-                                    <p style="color:aliceblue">Nằm trong chuỗi hoạt động hướng tới kỉ niệm 94 năm thành lập Đảng cộng sản Việt Nam, trường THCS Trưng Vương – Quận Hoàn Kiếm – Hà Nội tổ chức Ngày hội “Xuân yêu thương – Tết hội nhập”.</p>
+                                    <h5 class="title"><a href="coming-soon.html" style="color:aliceblue">Ngày hội "Xuân
+                                            yêu thương - Tết hội nhập"</a></h5>
+                                    <p style="color:aliceblue">Nằm trong chuỗi hoạt động hướng tới kỉ niệm 94 năm thành
+                                        lập Đảng cộng sản Việt Nam, trường THCS Trưng Vương – Quận Hoàn Kiếm – Hà Nội tổ
+                                        chức Ngày hội “Xuân yêu thương – Tết hội nhập”.</p>
                                     <ul class="event-meta">
-                                        <li style="color:aliceblue"><i class="icon-40" style="color:aliceblue"></i>Trường THCS Trưng Vương</li>
+                                        <li style="color:aliceblue"><i class="icon-40"
+                                                style="color:aliceblue"></i>Trường THCS Trưng Vương</li>
                                     </ul>
                                     <div class="read-more-btn d-flex justify-content-between">
-                                        <a class="edu-btn btn-small btn-secondary" href="coming-soon.html" style="color:aliceblue">Tìm hiểu thêm <i class="icon-4"></i></a>
+                                        <a class="edu-btn btn-small btn-secondary" href="coming-soon.html"
+                                            style="color:aliceblue">Tìm hiểu thêm <i class="icon-4"></i></a>
                                         <div class="">
-                                            <span class="heart-icon px-2"><i class="fa-solid fa-heart" style="font-size: 30px;"></i></span>
+                                            <span class="heart-icon px-2"><i class="fa-solid fa-heart"
+                                                    style="font-size: 30px;"></i></span>
                                             <span class="likes" style="font-size: 30px;">222</span>
                                         </div>
                                     </div>
@@ -1007,15 +1106,21 @@
                                         <span class="day" style="color:aliceblue">25</span>
                                         <span class="month" style="color:aliceblue">Tháng 12</span>
                                     </div>
-                                    <h5 class="title"><a href="coming-soon.html" style="color:aliceblue">Hưởng ứng chương trình “Xuân biên giới – Tết hải đảo”</a></h5>
-                                    <p style="color:aliceblue">Sáng ngày 25/12/2023 tại sân trường THCS Trưng Vương đã diễn ra buổi sinh hoạt dưới cờ vô cùng ý nghĩa hưởng ứng chương trình “Xuân biên giới – Tết hải đảo” năm 2024.</p>
+                                    <h5 class="title"><a href="coming-soon.html" style="color:aliceblue">Hưởng ứng
+                                            chương trình “Xuân biên giới – Tết hải đảo”</a></h5>
+                                    <p style="color:aliceblue">Sáng ngày 25/12/2023 tại sân trường THCS Trưng Vương đã
+                                        diễn ra buổi sinh hoạt dưới cờ vô cùng ý nghĩa hưởng ứng chương trình “Xuân biên
+                                        giới – Tết hải đảo” năm 2024.</p>
                                     <ul class="event-meta">
-                                        <li style="color:aliceblue"><i class="icon-40" style="color:aliceblue"></i>Trường THCS Trưng Vương</li>
+                                        <li style="color:aliceblue"><i class="icon-40"
+                                                style="color:aliceblue"></i>Trường THCS Trưng Vương</li>
                                     </ul>
                                     <div class="read-more-btn d-flex justify-content-between">
-                                        <a class="edu-btn btn-small btn-secondary" href="coming-soon.html" style="color:aliceblue">Tìm hiểu thêm <i class="icon-4"></i></a>
+                                        <a class="edu-btn btn-small btn-secondary" href="coming-soon.html"
+                                            style="color:aliceblue">Tìm hiểu thêm <i class="icon-4"></i></a>
                                         <div class="">
-                                            <span class="heart-icon px-2"><i class="fa-solid fa-heart" style="font-size: 30px;"></i></span>
+                                            <span class="heart-icon px-2"><i class="fa-solid fa-heart"
+                                                    style="font-size: 30px;"></i></span>
                                             <span class="likes" style="font-size: 30px;">115</span>
                                         </div>
                                     </div>
@@ -1023,10 +1128,12 @@
                             </div>
                         </div>
                     </div>
-                    
 
-                    <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
-                        <a href="https://www.facebook.com/thcstrungvuongtvs" target="_blank" class="edu-btn" style="color:aliceblue">Xem thêm <i class="icon-4"></i></a>
+
+                    <div class="course-view-all sal-animate" data-sal-delay="150" data-sal="slide-up"
+                        data-sal-duration="1200">
+                        <a href="https://www.facebook.com/thcstrungvuongtvs" target="_blank" class="edu-btn"
+                            style="color:aliceblue">Xem thêm <i class="icon-4"></i></a>
                     </div>
                     <!-- End Event Grid  -->
                 </div>
@@ -1046,19 +1153,21 @@
         <!--=      Pricing Area Start   	=-->
         <!--=====================================-->
         <div class="testimonial-area-13 section-gap-equal row">
-            <div class="col-6 d-flex flex-column align-items-center">
+            <div class="col-lg-6 col-md-12 d-flex flex-column align-items-center">
                 <h3 class="title">THỰC ĐƠN HÀNG TUẦN</h3>
 
                 <div id="carousel1" class="carousel slide">
                     <div class="carousel-inner">
                         <div style="height: 70vh;" class="carousel-item p-5 active">
-                            <img src="assets/images/about/thucdon1.jpg" class="d-block w-100" style="object-fit: cover; height:100%" alt="...">
+                            <img src="assets/images/about/thucdon1.jpg" class="d-block w-100" style=" height:100%"
+                                alt="...">
                         </div>
                         <!--<div style="height: 70vh;" class="carousel-item p-5">
-                            <img src="assets/images/about/about-33.jpg" class="d-block w-100" style="object-fit: cover; height:100%" alt="...">
+                            <img src="assets/images/about/about-33.jpg" class="d-block w-100" style=" height:100%" alt="...">
                         </div>-->
                         <div style="height: 70vh;" class="carousel-item p-5">
-                            <img src="assets/images/about/thucdon2.jpg" class="d-block w-100" style="object-fit: cover; height:100%" alt="...">
+                            <img src="assets/images/about/thucdon2.jpg" class="d-block w-100" style=" height:100%"
+                                alt="...">
                         </div>
                     </div>
                 </div>
@@ -1076,16 +1185,18 @@
 
             </div>
 
-            <div class="col-6 d-flex flex-column align-items-center">
+            <div class="col-lg-6 col-md-12 d-flex flex-column align-items-center">
                 <h3 class="title">LỊCH CÔNG TÁC HÀNG TUẦN</h3>
 
                 <div id="carousel2" class="carousel slide">
                     <div class="carousel-inner">
                         <div style="height: 70vh;" class="carousel-item p-5 active">
-                            <img src="assets/images/about/lichcongtac.jpg" class="d-block w-100" style="object-fit: cover; height:100%" alt="...">
+                            <img src="assets/images/about/lichcongtac.jpg" class="d-block w-100" style=" height:100%"
+                                alt="...">
                         </div>
                         <div style="height: 70vh;" class="carousel-item p-5">
-                            <img src="assets/images/about/lichcongtac.jpg" class="d-block w-100" style="object-fit: cover; height:100%" alt="...">
+                            <img src="assets/images/about/lichcongtac.jpg" class="d-block w-100" style=" height:100%"
+                                alt="...">
                         </div>
                         <!--<div style="height: 70vh;" class="carousel-item p-5">
                             <img src="assets/images/about/thucdon2.jpg" class="d-block w-100" style="object-fit: cover; height:100%" alt="...">
@@ -1110,16 +1221,18 @@
             <ul class="shape-group">
                 <li class="shape-5" data-sal-delay="100" data-sal="fade" data-sal-duration="1000">
                     <img class="d-block-shape-light" data-depth="2" src="assets/images/others/shape-54.png" alt="Shape">
-                    <img class="d-none-shape-dark" data-depth="2" src="assets/images/others/shape-dark-54.png" alt="Shape">
+                    <img class="d-none-shape-dark" data-depth="2" src="assets/images/others/shape-dark-54.png"
+                        alt="Shape">
                 </li>
             </ul>
         </div>
-        
+
         <!--=====================================-->
-         <!--=       Testimonial Area Start       =-->
+        <!--=       Testimonial Area Start       =-->
         <!--=====================================-->
         <!-- Start Testimonial Area  -->
-        <div class="gap-bottom-equal edu-about-area about-style-1 about-style-10" style=" background-image: url('assets/images/bg/ds6.png'); background-size:cover;">
+        <div class="gap-bottom-equal edu-about-area about-style-1 about-style-10"
+            style=" background-image: url('assets/images/bg/ds6.png'); background-size:cover;">
             <div class="container edublink-animated-shape">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6" data-sal-delay="150" data-sal="slide-right" data-sal-duration="800">
@@ -1129,7 +1242,8 @@
                                 <div class="inner">
                                     <div class="thumb">
                                         <img src="assets/images/about/about-25.jpg" alt="About Image">
-                                        <a href="https://www.youtube.com/watch?v=PICj5tr9hcc" class="popup-icon video-popup-activation">
+                                        <a href="https://www.youtube.com/watch?v=PICj5tr9hcc"
+                                            class="popup-icon video-popup-activation">
                                             <img src="assets/images/svg-icons/play-btn.svg" alt="">
                                         </a>
                                     </div>
@@ -1150,7 +1264,11 @@
                             <div class="section-title section-left">
                                 <h2 class="title" style="color: aliceblue;">TỔNG KẾT THÁNG 5</h2>
                                 <span class="shape-line"><i class="icon-19"></i></span>
-                                <p style="color: aliceblue;">Năm học 2023 – 2024 đã bước sang chặng đường cuối cùng. Nhớ lại ngày khai giảng, trái tim vẫn vẹn nguyên những xúc cảm háo hức trông mong tiếng trống trường rộn rã. Chín tháng trôi qua như một bức tranh với biết bao sắc màu. Và giờ đây, chúng ta cùng nhau vẽ nốt những họa sắc cuối, dưới nhứng tia nắng tháng Năm trải đầy khắp sân trường Trưng Vương yêu dấu.</p>
+                                <p style="color: aliceblue;">Năm học 2023 – 2024 đã bước sang chặng đường cuối cùng. Nhớ
+                                    lại ngày khai giảng, trái tim vẫn vẹn nguyên những xúc cảm háo hức trông mong tiếng
+                                    trống trường rộn rã. Chín tháng trôi qua như một bức tranh với biết bao sắc màu. Và
+                                    giờ đây, chúng ta cùng nhau vẽ nốt những họa sắc cuối, dưới nhứng tia nắng tháng Năm
+                                    trải đầy khắp sân trường Trưng Vương yêu dấu.</p>
                             </div>
                         </div>
                     </div>
@@ -1163,53 +1281,56 @@
         <!--=====================================-->
         <div class="hero-banner hero-style-9 d-flex flex-column">
             <div class="slider">
-                <div class="container" style="margin: 0px 200px 0px;">
+                <div class="container">
                     <div class="swiper health-slider-content">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB KHOA HỌC TỰ NHIÊN TVS</h1>
-                                    <p >CLB Khoa học tự nhiên TVS định hướng phát triển trên giá trị cốt lõi "TIÊN PHONG - ĐỔI MỚI - SÁNG TẠO".</p>
-                                    <p >Với những giá trị cốt lõi trên, CLB đã thiết kế một chương trình học riêng biệt từ chương trình của Bộ giáo dục và luôn song hành cùng đó là các buổi chuyên đề đặc biệt.</p>                                      
+                                    <p>CLB Khoa học tự nhiên TVS định hướng phát triển trên giá trị cốt lõi "TIÊN PHONG
+                                        - ĐỔI MỚI - SÁNG TẠO".</p>
+                                    <p>Với những giá trị cốt lõi trên, CLB đã thiết kế một chương trình học riêng biệt
+                                        từ chương trình của Bộ giáo dục và luôn song hành cùng đó là các buổi chuyên đề
+                                        đặc biệt.</p>
                                     <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB KHOA HỌC TỰ NHIÊN TVS</h1>
-                                    <p >CLB Khoa học tự nhiên TVS định hướng phát triển trên giá trị cốt lõi "TIÊN PHONG - ĐỔI MỚI - SÁNG TẠO".</p>
-                                    <p >Với những giá trị cốt lõi trên, CLB đã thiết kế một chương trình học riêng biệt từ chương trình của Bộ giáo dục và luôn song hành cùng đó là các buổi chuyên đề đặc biệt.</p>                                      
+                                    <p>CLB Khoa học tự nhiên TVS định hướng phát triển trên giá trị cốt lõi "TIÊN PHONG
+                                        - ĐỔI MỚI - SÁNG TẠO".</p>
+                                    <p>Với những giá trị cốt lõi trên, CLB đã thiết kế một chương trình học riêng biệt
+                                        từ chương trình của Bộ giáo dục và luôn song hành cùng đó là các buổi chuyên đề
+                                        đặc biệt.</p>
                                     <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB KHOA HỌC TỰ NHIÊN TVS</h1>
-                                    <p >CLB Khoa học tự nhiên TVS định hướng phát triển trên giá trị cốt lõi "TIÊN PHONG - ĐỔI MỚI - SÁNG TẠO".</p>
-                                    <p >Với những giá trị cốt lõi trên, CLB đã thiết kế một chương trình học riêng biệt từ chương trình của Bộ giáo dục và luôn song hành cùng đó là các buổi chuyên đề đặc biệt.</p>                                      
+                                    <p>CLB Khoa học tự nhiên TVS định hướng phát triển trên giá trị cốt lõi "TIÊN PHONG
+                                        - ĐỔI MỚI - SÁNG TẠO".</p>
+                                    <p>Với những giá trị cốt lõi trên, CLB đã thiết kế một chương trình học riêng biệt
+                                        từ chương trình của Bộ giáo dục và luôn song hành cùng đó là các buổi chuyên đề
+                                        đặc biệt.</p>
                                     <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB KHOA HỌC TỰ NHIÊN TVS</h1>
-                                    <p >CLB Khoa học tự nhiên TVS định hướng phát triển trên giá trị cốt lõi "TIÊN PHONG - ĐỔI MỚI - SÁNG TẠO".</p>
-                                    <p >Với những giá trị cốt lõi trên, CLB đã thiết kế một chương trình học riêng biệt từ chương trình của Bộ giáo dục và luôn song hành cùng đó là các buổi chuyên đề đặc biệt.</p>                                      
-                                    <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="inner">
-                                    <h1 class="title" style="color: #1f2945;">CLB BÓNG RỔ</h1>
-                                    <p >CLB Bóng Rổ Trưng Vương đã và đang xây dựng một môi trường tích cực và đầy năng lượng để thúc đẩy sự phát triển cá nhân và tập thể. Chúng tôi tin rằng bóng rổ không chỉ là một trò chơi, mà còn là cầu nối để kết nối con người, hình thành tinh thần đồng đội và rèn luyện kỹ năng sống.</p>
+                                    <p>CLB Khoa học tự nhiên TVS định hướng phát triển trên giá trị cốt lõi "TIÊN PHONG
+                                        - ĐỔI MỚI - SÁNG TẠO".</p>
+                                    <p>Với những giá trị cốt lõi trên, CLB đã thiết kế một chương trình học riêng biệt
+                                        từ chương trình của Bộ giáo dục và luôn song hành cùng đó là các buổi chuyên đề
+                                        đặc biệt.</p>
                                     <div class="banner-btn">
                                         <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
@@ -1218,7 +1339,10 @@
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB BÓNG RỔ</h1>
-                                    <p >CLB Bóng Rổ Trưng Vương đã và đang xây dựng một môi trường tích cực và đầy năng lượng để thúc đẩy sự phát triển cá nhân và tập thể. Chúng tôi tin rằng bóng rổ không chỉ là một trò chơi, mà còn là cầu nối để kết nối con người, hình thành tinh thần đồng đội và rèn luyện kỹ năng sống.</p>
+                                    <p>CLB Bóng Rổ Trưng Vương đã và đang xây dựng một môi trường tích cực và đầy năng
+                                        lượng để thúc đẩy sự phát triển cá nhân và tập thể. Chúng tôi tin rằng bóng rổ
+                                        không chỉ là một trò chơi, mà còn là cầu nối để kết nối con người, hình thành
+                                        tinh thần đồng đội và rèn luyện kỹ năng sống.</p>
                                     <div class="banner-btn">
                                         <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
@@ -1227,7 +1351,10 @@
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB BÓNG RỔ</h1>
-                                    <p >CLB Bóng Rổ Trưng Vương đã và đang xây dựng một môi trường tích cực và đầy năng lượng để thúc đẩy sự phát triển cá nhân và tập thể. Chúng tôi tin rằng bóng rổ không chỉ là một trò chơi, mà còn là cầu nối để kết nối con người, hình thành tinh thần đồng đội và rèn luyện kỹ năng sống.</p>
+                                    <p>CLB Bóng Rổ Trưng Vương đã và đang xây dựng một môi trường tích cực và đầy năng
+                                        lượng để thúc đẩy sự phát triển cá nhân và tập thể. Chúng tôi tin rằng bóng rổ
+                                        không chỉ là một trò chơi, mà còn là cầu nối để kết nối con người, hình thành
+                                        tinh thần đồng đội và rèn luyện kỹ năng sống.</p>
                                     <div class="banner-btn">
                                         <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
@@ -1236,7 +1363,10 @@
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB BÓNG RỔ</h1>
-                                    <p >CLB Bóng Rổ Trưng Vương đã và đang xây dựng một môi trường tích cực và đầy năng lượng để thúc đẩy sự phát triển cá nhân và tập thể. Chúng tôi tin rằng bóng rổ không chỉ là một trò chơi, mà còn là cầu nối để kết nối con người, hình thành tinh thần đồng đội và rèn luyện kỹ năng sống.</p>
+                                    <p>CLB Bóng Rổ Trưng Vương đã và đang xây dựng một môi trường tích cực và đầy năng
+                                        lượng để thúc đẩy sự phát triển cá nhân và tập thể. Chúng tôi tin rằng bóng rổ
+                                        không chỉ là một trò chơi, mà còn là cầu nối để kết nối con người, hình thành
+                                        tinh thần đồng đội và rèn luyện kỹ năng sống.</p>
                                     <div class="banner-btn">
                                         <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
@@ -1245,7 +1375,22 @@
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB BÓNG RỔ</h1>
-                                    <p >CLB Bóng Rổ Trưng Vương đã và đang xây dựng một môi trường tích cực và đầy năng lượng để thúc đẩy sự phát triển cá nhân và tập thể. Chúng tôi tin rằng bóng rổ không chỉ là một trò chơi, mà còn là cầu nối để kết nối con người, hình thành tinh thần đồng đội và rèn luyện kỹ năng sống.</p>
+                                    <p>CLB Bóng Rổ Trưng Vương đã và đang xây dựng một môi trường tích cực và đầy năng
+                                        lượng để thúc đẩy sự phát triển cá nhân và tập thể. Chúng tôi tin rằng bóng rổ
+                                        không chỉ là một trò chơi, mà còn là cầu nối để kết nối con người, hình thành
+                                        tinh thần đồng đội và rèn luyện kỹ năng sống.</p>
+                                    <div class="banner-btn">
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="inner">
+                                    <h1 class="title" style="color: #1f2945;">CLB BÓNG RỔ</h1>
+                                    <p>CLB Bóng Rổ Trưng Vương đã và đang xây dựng một môi trường tích cực và đầy năng
+                                        lượng để thúc đẩy sự phát triển cá nhân và tập thể. Chúng tôi tin rằng bóng rổ
+                                        không chỉ là một trò chơi, mà còn là cầu nối để kết nối con người, hình thành
+                                        tinh thần đồng đội và rèn luyện kỹ năng sống.</p>
                                     <div class="banner-btn">
                                         <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
@@ -1254,91 +1399,131 @@
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB CẦU LÔNG</h1>
-                                    <p>Câu lạc bộ cầu lông Trường THCS Trưng Vương được thành lập vào năm 2019, là nơi tập trung những đam mê và tài năng cầu lông trẻ tuổi. Với đội ngũ huấn luyện chuyên nghiệp và trang thiết bị hiện đại, chúng tôi cam kết mang đến môi trường lý tưởng để phát triển kỹ năng, rèn luyện thể lực và xây dựng tinh thần đồng đội cho các thành viên.</p>
+                                    <p>Câu lạc bộ cầu lông Trường THCS Trưng Vương được thành lập vào năm 2019, là nơi
+                                        tập trung những đam mê và tài năng cầu lông trẻ tuổi. Với đội ngũ huấn luyện
+                                        chuyên nghiệp và trang thiết bị hiện đại, chúng tôi cam kết mang đến môi trường
+                                        lý tưởng để phát triển kỹ năng, rèn luyện thể lực và xây dựng tinh thần đồng đội
+                                        cho các thành viên.</p>
                                     <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB CẦU LÔNG</h1>
-                                    <p>Câu lạc bộ cầu lông Trường THCS Trưng Vương được thành lập vào năm 2019, là nơi tập trung những đam mê và tài năng cầu lông trẻ tuổi. Với đội ngũ huấn luyện chuyên nghiệp và trang thiết bị hiện đại, chúng tôi cam kết mang đến môi trường lý tưởng để phát triển kỹ năng, rèn luyện thể lực và xây dựng tinh thần đồng đội cho các thành viên.</p>
+                                    <p>Câu lạc bộ cầu lông Trường THCS Trưng Vương được thành lập vào năm 2019, là nơi
+                                        tập trung những đam mê và tài năng cầu lông trẻ tuổi. Với đội ngũ huấn luyện
+                                        chuyên nghiệp và trang thiết bị hiện đại, chúng tôi cam kết mang đến môi trường
+                                        lý tưởng để phát triển kỹ năng, rèn luyện thể lực và xây dựng tinh thần đồng đội
+                                        cho các thành viên.</p>
                                     <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB CẦU LÔNG</h1>
-                                    <p>Câu lạc bộ cầu lông Trường THCS Trưng Vương được thành lập vào năm 2019, là nơi tập trung những đam mê và tài năng cầu lông trẻ tuổi. Với đội ngũ huấn luyện chuyên nghiệp và trang thiết bị hiện đại, chúng tôi cam kết mang đến môi trường lý tưởng để phát triển kỹ năng, rèn luyện thể lực và xây dựng tinh thần đồng đội cho các thành viên.</p>
+                                    <p>Câu lạc bộ cầu lông Trường THCS Trưng Vương được thành lập vào năm 2019, là nơi
+                                        tập trung những đam mê và tài năng cầu lông trẻ tuổi. Với đội ngũ huấn luyện
+                                        chuyên nghiệp và trang thiết bị hiện đại, chúng tôi cam kết mang đến môi trường
+                                        lý tưởng để phát triển kỹ năng, rèn luyện thể lực và xây dựng tinh thần đồng đội
+                                        cho các thành viên.</p>
                                     <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB CẦU LÔNG</h1>
-                                    <p>Câu lạc bộ cầu lông Trường THCS Trưng Vương được thành lập vào năm 2019, là nơi tập trung những đam mê và tài năng cầu lông trẻ tuổi. Với đội ngũ huấn luyện chuyên nghiệp và trang thiết bị hiện đại, chúng tôi cam kết mang đến môi trường lý tưởng để phát triển kỹ năng, rèn luyện thể lực và xây dựng tinh thần đồng đội cho các thành viên.</p>
+                                    <p>Câu lạc bộ cầu lông Trường THCS Trưng Vương được thành lập vào năm 2019, là nơi
+                                        tập trung những đam mê và tài năng cầu lông trẻ tuổi. Với đội ngũ huấn luyện
+                                        chuyên nghiệp và trang thiết bị hiện đại, chúng tôi cam kết mang đến môi trường
+                                        lý tưởng để phát triển kỹ năng, rèn luyện thể lực và xây dựng tinh thần đồng đội
+                                        cho các thành viên.</p>
                                     <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB CẦU LÔNG</h1>
-                                    <p>Câu lạc bộ cầu lông Trường THCS Trưng Vương được thành lập vào năm 2019, là nơi tập trung những đam mê và tài năng cầu lông trẻ tuổi. Với đội ngũ huấn luyện chuyên nghiệp và trang thiết bị hiện đại, chúng tôi cam kết mang đến môi trường lý tưởng để phát triển kỹ năng, rèn luyện thể lực và xây dựng tinh thần đồng đội cho các thành viên.</p>
+                                    <p>Câu lạc bộ cầu lông Trường THCS Trưng Vương được thành lập vào năm 2019, là nơi
+                                        tập trung những đam mê và tài năng cầu lông trẻ tuổi. Với đội ngũ huấn luyện
+                                        chuyên nghiệp và trang thiết bị hiện đại, chúng tôi cam kết mang đến môi trường
+                                        lý tưởng để phát triển kỹ năng, rèn luyện thể lực và xây dựng tinh thần đồng đội
+                                        cho các thành viên.</p>
                                     <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB ÂM NHẠC - NGHỆ THUẬT</h1>
-                                    <p >Các con được tham gia các chương trình nghệ thuật, các hoạt động sáng tạo, được thể hiện khả năng của mình trên sân khấu của trường THCS Trưng Vương. Ngoài ra, sẽ có những hoạt động biểu diễn báo cáo cuối năm học đồng thời kết hợp giao lưu văn hóa văn nghệ với các trường bạn khi có các chương trình hoạt động ngoại khoá.
-                                        </p>
+                                    <p>Các con được tham gia các chương trình nghệ thuật, các hoạt động sáng tạo, được
+                                        thể hiện khả năng của mình trên sân khấu của trường THCS Trưng Vương. Ngoài ra,
+                                        sẽ có những hoạt động biểu diễn báo cáo cuối năm học đồng thời kết hợp giao lưu
+                                        văn hóa văn nghệ với các trường bạn khi có các chương trình hoạt động ngoại
+                                        khoá.
+                                    </p>
                                     <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB ÂM NHẠC - NGHỆ THUẬT</h1>
-                                    <p >Các con được tham gia các chương trình nghệ thuật, các hoạt động sáng tạo, được thể hiện khả năng của mình trên sân khấu của trường THCS Trưng Vương. Ngoài ra, sẽ có những hoạt động biểu diễn báo cáo cuối năm học đồng thời kết hợp giao lưu văn hóa văn nghệ với các trường bạn khi có các chương trình hoạt động ngoại khoá.</p>
+                                    <p>Các con được tham gia các chương trình nghệ thuật, các hoạt động sáng tạo, được
+                                        thể hiện khả năng của mình trên sân khấu của trường THCS Trưng Vương. Ngoài ra,
+                                        sẽ có những hoạt động biểu diễn báo cáo cuối năm học đồng thời kết hợp giao lưu
+                                        văn hóa văn nghệ với các trường bạn khi có các chương trình hoạt động ngoại
+                                        khoá.</p>
                                     <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB ÂM NHẠC - NGHỆ THUẬT</h1>
-                                    <p >Các con được tham gia các chương trình nghệ thuật, các hoạt động sáng tạo, được thể hiện khả năng của mình trên sân khấu của trường THCS Trưng Vương. Ngoài ra, sẽ có những hoạt động biểu diễn báo cáo cuối năm học đồng thời kết hợp giao lưu văn hóa văn nghệ với các trường bạn khi có các chương trình hoạt động ngoại khoá.</p>
+                                    <p>Các con được tham gia các chương trình nghệ thuật, các hoạt động sáng tạo, được
+                                        thể hiện khả năng của mình trên sân khấu của trường THCS Trưng Vương. Ngoài ra,
+                                        sẽ có những hoạt động biểu diễn báo cáo cuối năm học đồng thời kết hợp giao lưu
+                                        văn hóa văn nghệ với các trường bạn khi có các chương trình hoạt động ngoại
+                                        khoá.</p>
                                     <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB ÂM NHẠC - NGHỆ THUẬT</h1>
-                                    <p >Các con được tham gia các chương trình nghệ thuật, các hoạt động sáng tạo, được thể hiện khả năng của mình trên sân khấu của trường THCS Trưng Vương. Ngoài ra, sẽ có những hoạt động biểu diễn báo cáo cuối năm học đồng thời kết hợp giao lưu văn hóa văn nghệ với các trường bạn khi có các chương trình hoạt động ngoại khoá.</p>
+                                    <p>Các con được tham gia các chương trình nghệ thuật, các hoạt động sáng tạo, được
+                                        thể hiện khả năng của mình trên sân khấu của trường THCS Trưng Vương. Ngoài ra,
+                                        sẽ có những hoạt động biểu diễn báo cáo cuối năm học đồng thời kết hợp giao lưu
+                                        văn hóa văn nghệ với các trường bạn khi có các chương trình hoạt động ngoại
+                                        khoá.</p>
                                     <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="inner">
                                     <h1 class="title" style="color: #1f2945;">CLB ÂM NHẠC - NGHỆ THUẬT</h1>
-                                    <p >Các con được tham gia các chương trình nghệ thuật, các hoạt động sáng tạo, được thể hiện khả năng của mình trên sân khấu của trường THCS Trưng Vương. Ngoài ra, sẽ có những hoạt động biểu diễn báo cáo cuối năm học đồng thời kết hợp giao lưu văn hóa văn nghệ với các trường bạn khi có các chương trình hoạt động ngoại khoá.</p>
+                                    <p>Các con được tham gia các chương trình nghệ thuật, các hoạt động sáng tạo, được
+                                        thể hiện khả năng của mình trên sân khấu của trường THCS Trưng Vương. Ngoài ra,
+                                        sẽ có những hoạt động biểu diễn báo cáo cuối năm học đồng thời kết hợp giao lưu
+                                        văn hóa văn nghệ với các trường bạn khi có các chương trình hoạt động ngoại
+                                        khoá.</p>
                                     <div class="banner-btn">
-                                        <a href="tt3.html" class="edu-btn">Xem thêm  <i class="icon-4"></i></a>
+                                        <a href="tt3.html" class="edu-btn">Xem thêm <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1451,7 +1636,7 @@
                     <img data-depth="-2" src="assets/images/about/shape-13.png" alt="">
                 </li>
             </ul>
-            
+
             <div class="row justify-content-center">
                 <div class="hero-slider-bg-controls d-flex flex-row" style="position: relative;">
                     <div class="swiper-slide-controls slide-prev" style="right: 0px;">
@@ -1471,7 +1656,8 @@
         <div class="testimonial-area-17 section-gap-equal digital-marketing-testimonial edublink-animated-shape">
             <div class="edublink-animated-shape">
                 <div class="testimonial-heading-area">
-                    <div class="section-title section-center" data-sal-delay="50" data-sal="slide-up" data-sal-duration="800">
+                    <div class="section-title section-center" data-sal-delay="50" data-sal="slide-up"
+                        data-sal-duration="800">
                         <h1 class="title">KẾT NỐI - HỢP TÁC</h1>
                         <span class="shape-line"><i class="icon-19"></i></span>
                     </div>
@@ -1481,43 +1667,55 @@
                         <div class="swiper-slide">
                             <div class="testimonial-grid">
                                 <div class="content">
-                                    <p>Tiếp nối chuỗi các hoạt động trao đổi, hợp tác quốc tế trong năm học 2022-2023, trường THCS Trưng Vương đã có buổi gặp mặt chính thức với trường THCS CHIJ Singapore.
-                                        Sau nhiều chuyến thăm chính thức và các cuộc thi gắt gao, hai trường đã lựa chọn được 8 em học sinh xuất sắc nhất từ THCS Trưng Vương để trao học bổng ASEAN. Học bổng ASEAN do chính phủ Singapore tài trợ 100% học phí cho 4 năm học phổ thông và dự bị đại học tại trường công lập Singapore. Học bổng tìm kiếm các học sinh có hồ sơ thể hiện quá trình học tập phong phú ở nhiều lĩnh vực.                                          
-                                        </p>
+                                    <p>Tiếp nối chuỗi các hoạt động trao đổi, hợp tác quốc tế trong năm học 2022-2023,
+                                        trường THCS Trưng Vương đã có buổi gặp mặt chính thức với trường THCS CHIJ
+                                        Singapore.
+                                        Sau nhiều chuyến thăm chính thức và các cuộc thi gắt gao, hai trường đã lựa chọn
+                                        được 8 em học sinh xuất sắc nhất từ THCS Trưng Vương để trao học bổng ASEAN. Học
+                                        bổng ASEAN do chính phủ Singapore tài trợ 100% học phí cho 4 năm học phổ thông
+                                        và dự bị đại học tại trường công lập Singapore. Học bổng tìm kiếm các học sinh
+                                        có hồ sơ thể hiện quá trình học tập phong phú ở nhiều lĩnh vực.
+                                    </p>
                                     <h3 class="title">CHIJ (Singapore)</h3>
                                     <div class="edu-gallery-area edu-section-gap pt-5 mt-5" style="margin-top: -100px;">
                                         <div class="container">
                                             <div class="isotope-wrapper">
                                                 <div class="isotope-list gallery-grid-wrap">
                                                     <div id="animated-thumbnials">
-                                                        <a href="assets/images/gallery/chij1.jpg" class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item education">
+                                                        <a href="assets/images/gallery/chij1.jpg"
+                                                            class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item education">
                                                             <div class="thumbnail" style="border-radius: 5px;">
-                                                                <img src="assets/images/gallery/chij1.jpg" alt="Gallery Image" style="border-radius: 5px;">
+                                                                <img src="assets/images/gallery/chij1.jpg"
+                                                                    alt="Gallery Image" style="border-radius: 5px;">
                                                             </div>
                                                             <div class="zoom-icon">
                                                                 <i class="icon-69"></i>
                                                             </div>
                                                         </a>
-                            
-                                                        <a href="assets/images/gallery/chij2.jpg" class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item marketing">
+
+                                                        <a href="assets/images/gallery/chij2.jpg"
+                                                            class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item marketing">
                                                             <div class="thumbnail" style="border-radius: 5px;">
-                                                                <img src="assets/images/gallery/chij2.jpg" alt="Gallery Image" style="border-radius: 5px;">
+                                                                <img src="assets/images/gallery/chij2.jpg"
+                                                                    alt="Gallery Image" style="border-radius: 5px;">
                                                             </div>
                                                             <div class="zoom-icon">
                                                                 <i class="icon-69"></i>
                                                             </div>
                                                         </a>
-                            
-                            
-                                                        <a href="assets/images/gallery/chij3.jpg" class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item education health">
+
+
+                                                        <a href="assets/images/gallery/chij3.jpg"
+                                                            class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item education health">
                                                             <div class="thumbnail" style="border-radius: 5px;">
-                                                                <img src="assets/images/gallery/chij3.jpg" alt="Gallery Image" style="border-radius: 5px;">
+                                                                <img src="assets/images/gallery/chij3.jpg"
+                                                                    alt="Gallery Image" style="border-radius: 5px;">
                                                             </div>
                                                             <div class="zoom-icon">
                                                                 <i class="icon-69"></i>
                                                             </div>
                                                         </a>
-                            
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1529,47 +1727,62 @@
                         <div class="swiper-slide">
                             <div class="testimonial-grid">
                                 <div class="content">
-                                    <p>Nhằm mang đến cơ hội gặp gỡ, giao lưu và học hỏi giữa thầy giáo, cô giáo và học sinh THSC Trưng Vương với thầy giáo, cô giáo và học sinh quốc tế đến từ nhiều nền văn hóa, đồng thời trang bị hành trang cần thiết cho học sinh trong nhà trường trở thành những công dân toàn cầu trong tương lai, Ban giám hiệu trường THCS Trưng Vương không ngừng nỗ lực trong công tác kết nối, trao đổi và hợp tác với nhiều trường thuộc nhiều quốc gia.</p>
-                                    <p>Trong chuỗi các hoạt động đó, ngày 10/4/2019 Ban giám hiệu trường THCS Trưng Vương đã ký kết giao lưu trao đổi với Ban giám hiệu trường Hàn Quốc Hà nội (KISH).</p>
-                                    <p>Hàng năm, hai trường đều tổ chức các sự kiện, hoạt động giao lưu, trải nghiệm cho các em học sinh, tiêu biểu là Hội nghị Mô phỏng Liên hợp quốc KISH MUN (2022), Trại hè Khoa học Hanoi Challenge (2023), Ngày hội Tiếng Việt (2023).</p>
-                                         
+                                    <p>Nhằm mang đến cơ hội gặp gỡ, giao lưu và học hỏi giữa thầy giáo, cô giáo và học
+                                        sinh THSC Trưng Vương với thầy giáo, cô giáo và học sinh quốc tế đến từ nhiều
+                                        nền văn hóa, đồng thời trang bị hành trang cần thiết cho học sinh trong nhà
+                                        trường trở thành những công dân toàn cầu trong tương lai, Ban giám hiệu trường
+                                        THCS Trưng Vương không ngừng nỗ lực trong công tác kết nối, trao đổi và hợp tác
+                                        với nhiều trường thuộc nhiều quốc gia.</p>
+                                    <p>Trong chuỗi các hoạt động đó, ngày 10/4/2019 Ban giám hiệu trường THCS Trưng
+                                        Vương đã ký kết giao lưu trao đổi với Ban giám hiệu trường Hàn Quốc Hà nội
+                                        (KISH).</p>
+                                    <p>Hàng năm, hai trường đều tổ chức các sự kiện, hoạt động giao lưu, trải nghiệm cho
+                                        các em học sinh, tiêu biểu là Hội nghị Mô phỏng Liên hợp quốc KISH MUN (2022),
+                                        Trại hè Khoa học Hanoi Challenge (2023), Ngày hội Tiếng Việt (2023).</p>
+
                                     <h3 class="title">KISH (Korea)</h3>
                                     <div class="edu-gallery-area edu-section-gap pt-5 mt-5" style="margin-top: -100px;">
                                         <div class="container">
                                             <div class="isotope-wrapper">
                                                 <div class="isotope-list gallery-grid-wrap">
                                                     <div id="animated-thumbnials">
-                            
-                            
-                                                        <a href="assets/images/gallery/kish1.jpg" class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item education">
+
+
+                                                        <a href="assets/images/gallery/kish1.jpg"
+                                                            class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item education">
                                                             <div class="thumbnail" style="border-radius: 5px;">
-                                                                <img src="assets/images/gallery/kish1.jpg" alt="Gallery Image" style="border-radius: 5px;">
+                                                                <img src="assets/images/gallery/kish1.jpg"
+                                                                    alt="Gallery Image" style="border-radius: 5px;">
                                                             </div>
                                                             <div class="zoom-icon">
                                                                 <i class="icon-69"></i>
                                                             </div>
                                                         </a>
-                            
-                            
-                                                        <a href="assets/images/gallery/kish2.jpg" class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item marketing">
+
+
+                                                        <a href="assets/images/gallery/kish2.jpg"
+                                                            class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item marketing">
                                                             <div class="thumbnail" style="border-radius: 5px;">
-                                                                <img src="assets/images/gallery/kish2.jpg" alt="Gallery Image" style="border-radius: 5px;">
+                                                                <img src="assets/images/gallery/kish2.jpg"
+                                                                    alt="Gallery Image" style="border-radius: 5px;">
                                                             </div>
                                                             <div class="zoom-icon">
                                                                 <i class="icon-69"></i>
                                                             </div>
                                                         </a>
-                            
-                            
-                                                        <a href="assets/images/gallery/kish3.jpg" class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item education health">
+
+
+                                                        <a href="assets/images/gallery/kish3.jpg"
+                                                            class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item education health">
                                                             <div class="thumbnail" style="border-radius: 5px;">
-                                                                <img src="assets/images/gallery/kish3.jpg" alt="Gallery Image" style="border-radius: 5px;">
+                                                                <img src="assets/images/gallery/kish3.jpg"
+                                                                    alt="Gallery Image" style="border-radius: 5px;">
                                                             </div>
                                                             <div class="zoom-icon">
                                                                 <i class="icon-69"></i>
                                                             </div>
                                                         </a>
-                            
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1582,44 +1795,54 @@
                             <div class="testimonial-grid">
                                 <div class="content">
 
-                                    <p>Kể từ khi kết nghĩa với trường THCS Trưng Vương vào năm 2019, trường Mons-tabour đã nhiều lần cử GV có kinh nghiệm sang dạy cho HS Việt Nam, và lựa chọn các em có thành tích xuất sắc sang Việt Nam trao đổi, trải nghiệm môi trường học. Các em cùng nhau tham gia các chương trình trải nghiệm cho GV THCS Trưng Vương dẫn dắt, tới thăm nhà máy xử lý rác, và làm các dự án về môi trường.  </p>
+                                    <p>Kể từ khi kết nghĩa với trường THCS Trưng Vương vào năm 2019, trường Mons-tabour
+                                        đã nhiều lần cử GV có kinh nghiệm sang dạy cho HS Việt Nam, và lựa chọn các em
+                                        có thành tích xuất sắc sang Việt Nam trao đổi, trải nghiệm môi trường học. Các
+                                        em cùng nhau tham gia các chương trình trải nghiệm cho GV THCS Trưng Vương dẫn
+                                        dắt, tới thăm nhà máy xử lý rác, và làm các dự án về môi trường. </p>
                                     <h3 class="title">Mons-tabour (Germany) </h3>
                                     <div class="edu-gallery-area edu-section-gap pt-5 mt-5" style="margin-top: -100px;">
                                         <div class="container">
                                             <div class="isotope-wrapper">
                                                 <div class="isotope-list gallery-grid-wrap">
                                                     <div id="animated-thumbnials">
-                            
-                            
-                                                        <a href="assets/images/gallery/mtg1.jpg" class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item education">
+
+
+                                                        <a href="assets/images/gallery/mtg1.jpg"
+                                                            class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item education">
                                                             <div class="thumbnail" style="border-radius: 5px;">
-                                                                <img src="assets/images/gallery/mtg1.jpg" alt="Gallery Image" style="border-radius: 5px;">
+                                                                <img src="assets/images/gallery/mtg1.jpg"
+                                                                    alt="Gallery Image" style="border-radius: 5px;">
                                                             </div>
                                                             <div class="zoom-icon">
                                                                 <i class="icon-69"></i>
                                                             </div>
                                                         </a>
-                            
-                            
-                                                        <a href="assets/images/gallery/mtg2.jpg" class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item marketing">
+
+
+                                                        <a href="assets/images/gallery/mtg2.jpg"
+                                                            class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item marketing">
                                                             <div class="thumbnail" style="border-radius: 5px;">
-                                                                <img src="assets/images/gallery/mtg2.jpg" alt="Gallery Image" style="border-radius: 5px;">
+                                                                <img src="assets/images/gallery/mtg2.jpg"
+                                                                    alt="Gallery Image" style="border-radius: 5px;">
                                                             </div>
                                                             <div class="zoom-icon">
                                                                 <i class="icon-69"></i>
                                                             </div>
                                                         </a>
-                            
-                            
-                                                        <a href="assets/images/gallery/mtg3.jpg" class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item education health">
+
+
+                                                        <a href="assets/images/gallery/mtg3.jpg"
+                                                            class="edu-popup-image edu-gallery-grid p-gallery-grid-wrap isotope-item education health">
                                                             <div class="thumbnail" style="border-radius: 5px;">
-                                                                <img src="assets/images/gallery/mtg3.jpg" alt="Gallery Image" style="border-radius: 5px;">
+                                                                <img src="assets/images/gallery/mtg3.jpg"
+                                                                    alt="Gallery Image" style="border-radius: 5px;">
                                                             </div>
                                                             <div class="zoom-icon">
                                                                 <i class="icon-69"></i>
                                                             </div>
                                                         </a>
-                            
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1630,7 +1853,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper digital-marketing-testimonial-thumbs photo-testimonial-thumb-wrap" style="margin-top:-150px">
+                <div class="swiper digital-marketing-testimonial-thumbs photo-testimonial-thumb-wrap"
+                    style="margin-top:-150px">
                     <div class="swiper-wrapper">
                         <div class="nav-thumb swiper-slide">
                             <div class="clint-thumb">
@@ -1682,18 +1906,21 @@
                             <div class="edu-footer-widget">
                                 <div class="logo" style="width:20%">
                                     <a href="index.html">
-                                        <img class="logo-light" src="assets/images/logo/logotv2.png" alt="Corporate Logo">
+                                        <img class="logo-light" src="assets/images/logo/logotv2.png"
+                                            alt="Corporate Logo">
                                     </a>
                                 </div>
-                                <p class="description"> Trường THCS Trưng Vương - Đơn vị anh hùng thời kì đổi mới - Là một trong những ngôi trường có tuổi đời lâu nhất của thành phố Hà Nội.</p>
+                                <p class="description"> Trường THCS Trưng Vương - Đơn vị anh hùng thời kì đổi mới - Là
+                                    một trong những ngôi trường có tuổi đời lâu nhất của thành phố Hà Nội.</p>
                                 <div class="widget-information">
-                                    <ul class="information-list">   
+                                    <ul class="information-list">
                                         <li><span>Địa chỉ:</span>26 Hàng Bài, Q.Hoàn Kiếm, TP.Hà Nội</li>
                                         <li><span>Hotline:</span><a href="tel:+842438254182">0243.825.4182</a></li>
-                                        <li><span>Email:</span><a href="mailto:c2trungvuong-hk@hanoiedu.vn" target="_blank">c2trungvuong-hk@hanoiedu.vn</a></li>
+                                        <li><span>Email:</span><a href="mailto:c2trungvuong-hk@hanoiedu.vn"
+                                                target="_blank">c2trungvuong-hk@hanoiedu.vn</a></li>
                                     </ul>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="edu-footer-widget explore-widget">
@@ -1774,9 +2001,9 @@
         let likes = $('.likes')
 
         // Loop through each heart
-        hearts.forEach(function(heart) {
+        hearts.forEach(function (heart) {
             // Add click event listener to each heart
-            heart.addEventListener('click', function() {
+            heart.addEventListener('click', function () {
                 // Toggle the color between default (assume black) and red
                 if (heart.style.color === 'red') {
                     heart.style.color = ''; // Reset to default color (remove inline style)
@@ -1785,7 +2012,7 @@
                     heart.style.color = 'red'; // Change color to red
                     $(this).next().text('223');
                     Toastify({
-                        text: "Cảm ơn bạn đã tham gia hoạt động này!",    
+                        text: "Cảm ơn bạn đã tham gia hoạt động này!",
                         duration: 3000,
                         style: {
                             background: "linear-gradient(to right, #00b09b, #BCA268)",

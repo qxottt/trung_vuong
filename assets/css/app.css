@@ -15743,13 +15743,13 @@ body .tpd-size-medium .tpd-content {
 
 @media only screen and (max-width: 1199px) {
     .hero-banner {
-        min-height: 600px;
+        min-height: 660px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero-banner {
-        min-height: 100%;
+        min-height: 660px;
     }
 }
 
@@ -15761,14 +15761,12 @@ body .tpd-size-medium .tpd-content {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero-banner .banner-content {
         text-align: center;
-        margin-bottom: 50px;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .hero-banner .banner-content {
         text-align: center;
-        margin-bottom: 40px;
     }
 }
 
@@ -15781,6 +15779,20 @@ body .tpd-size-medium .tpd-content {
     font-size: 16px;
     margin-bottom: 20px;
     display: block;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-banner .banner-content .subtitle{
+        letter-spacing: 2.6px;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .hero-banner .banner-content .subtitle{
+        letter-spacing: 2.6px;
+        font-size: 8px;
+        margin-bottom: 20px;
+    }
 }
 
 .hero-banner .banner-content .title {
@@ -16544,7 +16556,17 @@ body .tpd-size-medium .tpd-content {
     min-height: 715px;
     object-fit: cover;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-banner.hero-style-3 .swiper-slide img{
+        min-height: 715px;
+    }
+}
 
+@media only screen and (max-width: 767px) {
+    .hero-banner.hero-style-3 .swiper-slide img{
+        min-height: 715px;
+    }
+}
 .hero-banner.hero-style-3 .swiper-slide.swiper-slide-duplicate-active img, .hero-banner.hero-style-3 .swiper-slide.swiper-slide.swiper-slide-active img {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -16559,18 +16581,19 @@ body .tpd-size-medium .tpd-content {
     z-index: 12;
 }
 
-@media only screen and (min-width: 1401px) and (max-width: 1650px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero-banner.hero-style-3 .thumbnail-bg-content .banner-content {
         bottom: 240px;
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
     .hero-banner.hero-style-3 .thumbnail-bg-content .banner-content {
-        max-width: 100%;
-        bottom: 220px;
+        bottom: 170px;
+        padding-left: 20px;
     }
 }
+
 
 .hero-banner.hero-style-3 .thumbnail-bg-content .banner-content .subtitle {
     opacity: 0;
@@ -30319,7 +30342,6 @@ body .tpd-size-medium .tpd-content {
 .edu-header .header-mainmenu {
     background-color: var(--color-white);
     box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.05);
-    position: relative;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -31077,6 +31099,55 @@ body .tpd-size-medium .tpd-content {
     }
 }
 
+/* CSS chung cho menu */
+.menu-toggle-button {
+    display: none; /* Ẩn nút menu mặc định */
+    position: absolute;
+    right: 20px; /* Điều chỉnh khoảng cách từ phía bên phải */
+    background: transparent;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    top: 0;
+    bottom: 0;
+    font-size: 20px;
+}
+
+.mainmenu {
+    display: block; /* Hiển thị menu mặc định */
+}
+
+/* Ẩn menu chính trên màn hình điện thoại */
+@media screen and (max-width: 768px) {
+    .mainmenu {
+        display: none;
+    }
+
+    .menu-toggle-button {
+        display: block; /* Hiển thị nút menu trên màn hình điện thoại */
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .mainmenu {
+        display: none;
+    }
+
+    .menu-toggle-button {
+        display: block; /* Hiển thị nút menu trên màn hình điện thoại */
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mainmenu {
+        display: none;
+    }
+
+    .menu-toggle-button {
+        display: block; /* Hiển thị nút menu trên màn hình điện thoại */
+    }
+}
+
 /*------------------------
     Sales Coach
 --------------------------*/
@@ -31192,6 +31263,7 @@ body .tpd-size-medium .tpd-content {
 /*--------------------------
     Navigation Styles 
 ----------------------------*/
+
 .mainmenu-nav .mainmenu {
     display: -webkit-box;
     display: -webkit-flex;
@@ -31205,6 +31277,8 @@ body .tpd-size-medium .tpd-content {
     font-family: var(--font-secondary);
 }
 
+
+
 .mainmenu-nav .mainmenu > li > a {
     color: var(--color-heading);
     font-size: 15px;
@@ -31216,6 +31290,7 @@ body .tpd-size-medium .tpd-content {
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
+
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .mainmenu-nav .mainmenu > li > a {
@@ -31833,6 +31908,15 @@ body .tpd-size-medium .tpd-content {
     color: var(--color-primary);
 }
 
+.popup-mobile-menu {
+    display: none;
+}
+
+.header-mainmenu {
+    display: block;
+}
+
+
 /*------------------------------
     Popup Menu Styles  
 --------------------------------*/
@@ -31853,6 +31937,8 @@ body .tpd-size-medium .tpd-content {
     -webkit-transition: opacity .5s ease-out;
     transition: opacity .5s ease-out;
 }
+
+  
 
 .popup-mobile-menu .inner {
     width: 305px;
@@ -31929,6 +32015,12 @@ body .tpd-size-medium .tpd-content {
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06);
     -webkit-transition: var(--transition);
     transition: var(--transition);
+}
+.popup-mobile-menu .inner .header-top .close-menu .close-button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
 }
 
 .popup-mobile-menu .inner .header-top .close-menu .close-button:hover {
@@ -32017,6 +32109,24 @@ body .tpd-size-medium .tpd-content {
     list-style: none;
     padding-left: 14px;
     display: none;
+}
+
+.icon-73 {
+    font-size: 24px; /* Kích thước biểu tượng */
+    color: #ffffff; /* Màu sắc biểu tượng */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+}
+
+@media (min-width: 768px) {
+    .icon-73 {
+        display: none; /* Ẩn biểu tượng khi màn hình lớn hơn 768px */
+    }
+}
+
+@media (max-width: 767px) {
+    .header-mainnav {
+        display: none; /* Ẩn menu chính khi màn hình nhỏ hơn 768px */
+    }
 }
 
 .popup-mobile-menu .mainmenu .mega-menu > li .menu-title {
